@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7.92" height="14.786" viewBox="0 0 7.92 14.786">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_29707" data-name="사각형 29707" width="7.92" height="14.786" fill="#afafbc"/>
+    </clipPath>
+  </defs>
+  <g id="footer-ico-facebook.svg" transform="translate(0)">
+    <g id="그룹_83148" data-name="그룹 83148" transform="translate(0)" clip-path="url(#clip-path)">
+      <path id="패스_85079" data-name="패스 85079" d="M7.4,8.317l.411-2.676H5.243V3.9A1.338,1.338,0,0,1,6.752,2.459H7.92V.181A14.25,14.25,0,0,0,5.847,0a3.267,3.267,0,0,0-3.5,3.6v2.04H0V8.317H2.351v6.469H5.243V8.317Z" fill="#afafbc"/>
+    </g>
+  </g>
+</svg>

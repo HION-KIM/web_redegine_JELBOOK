@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_63" data-name="사각형 63" width="14.813" height="14.812" fill="#afafbc"/>
+    </clipPath>
+  </defs>
+  <g id="footer-ico-instagram.svg" transform="translate(2.755 2)">
+    <g id="footer-ico-instagram.svg-2" data-name="footer-ico-instagram.svg" transform="translate(1.222 1.367)">
+      <g id="그룹_35" data-name="그룹 35" clip-path="url(#clip-path)">
+        <path id="패스_3" data-name="패스 3" d="M10.249,0H4.564A4.564,4.564,0,0,0,0,4.563v5.685a4.564,4.564,0,0,0,4.564,4.563h5.685a4.563,4.563,0,0,0,4.564-4.563V4.563A4.564,4.564,0,0,0,10.249,0m3.142,9.7A3.688,3.688,0,0,1,9.7,13.39H5.109A3.688,3.688,0,0,1,1.421,9.7V5.108A3.688,3.688,0,0,1,5.109,1.421H9.7a3.689,3.689,0,0,1,3.687,3.688Z" transform="translate(0 0.001)" fill="#afafbc"/>
+        <path id="패스_4" data-name="패스 4" d="M55.666,49.357a3.9,3.9,0,1,0,3.9,3.9,3.9,3.9,0,0,0-3.9-3.9m0,6.249a2.347,2.347,0,1,1,2.347-2.347,2.347,2.347,0,0,1-2.347,2.347" transform="translate(-48.061 -45.826)" fill="#afafbc"/>
+        <path id="패스_5" data-name="패스 5" d="M145.2,35.62a.992.992,0,1,1-.993-.993.993.993,0,0,1,.993.993" transform="translate(-132.968 -32.15)" fill="#afafbc"/>
+      </g>
+    </g>
+    <rect id="사각형_1362" data-name="사각형 1362" width="22" height="22" transform="translate(-2.755 -2)" fill="none"/>
+  </g>
+</svg>
