@@ -16,9 +16,9 @@ p {
 a {
     color: inherit;
     text-decoration: none;
+    display:block;
 }
 
-span,
 img {
     display: block;
 }
