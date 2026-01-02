@@ -67,6 +67,59 @@
             <div></div>
           </div>
         </div>
+
+        <div class="header-side-menu-box">
+          <div>
+            <div class="leng">
+              <button><span>Kor</span></button>
+              <button><span>En</span></button>
+            </div>
+            <div></div> <!-- 중간 막대 -->
+            <div class="login"><a href="#"><span>로그인</span></a></div>
+          </div>
+
+          <nav class="menu-box">
+            <ul>
+              <li>
+                <a href="#"><span>회사소개</span></a>
+                <ul>
+                  <li><a href="#"><span>출판사 소개</span></a></li>
+                  <li><a href="#"><span>구입처 안내</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>도서소개</span></a>
+                <ul>
+                  <li><a href="#"><span>그림책</span></a></li>
+                  <li><a href="#"><span>어린이 교양</span></a></li>
+                  <li><a href="#"><span>수상 추천 도서</span></a></li>
+                  <li><a href="#"><span>md 추천 도서</span></a></li>
+                  <li><a href="#"><span>북트레일러</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>베스트도서</span></a></li>
+              <li><a href="#"><span>신상도서</span></a></li>
+              <li><a href="#"><span>지원센터</span></a>
+                <ul>
+                  <li><a href="#"><span>원고투고</span></a></li>
+                  <li><a href="#"><span>웹진</span></a></li>
+                  <li><a href="#"><span>도서목록 받기</span></a></li>
+                  <li><a href="#"><span>이벤트 소식</span></a></li>
+                  <li><a href="#"><span>온라인 소식 받기</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>공지사항</span></a></li>
+            </ul>
+          </nav>
+
+          <div class="sns-box">
+            <div>
+              <div><a href="#"><img src="../imgs/icon_sns_instargram.svg" alt="SNS 아이콘"></a></div>
+              <div><a href="#"><img src="../imgs/icon_sns_facebook.svg" alt="SNS 아이콘"></a></div>
+              <div><a href="#"><img src="../imgs/icon_sns_naver.svg" alt="SNS 아이콘"></a></div>
+              <div><a href="#"><img src="../imgs/icon_sns_mom.svg" alt="SNS 아이콘"></a></div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="header-menu-box">
         <div class="closed-btn"></div>
@@ -134,10 +187,15 @@
           <img src="../imgs/img_background_btn_box.jpg" alt="배경 이미지">
         </div>
       </div>
+
     </header>
   </div>
 
   <style>
+    body {
+      overflow-x: hidden;
+    }
+
     header .header-inner:hover {
       background-color: #fff;
     }
@@ -156,7 +214,7 @@
 
     header .header-inner .logo-box {
       width: 200px;
-      height: 41px;
+      flex-shrink: 0;
     }
 
     header .header-inner .logo-box>img {
@@ -297,10 +355,7 @@
     }
 
     header .header-inner:hover .btn-box>div {
-      width: 100%;
-      height: 3px;
       background-color: #222;
-      border-radius: 3px;
     }
 
 
@@ -528,6 +583,49 @@
       height: 100%;
     }
 
+    header .header-side-menu-box {
+      visibility: visible;
+      max-width: 400px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #fff;
+      z-index: -1;
+      padding-top: 80px;
+
+      border: dashed red;
+
+    }
+
+    header .header-side-menu-box .leng {
+      border: dashed green;
+
+      display: flex;
+      align-items: flex-start;
+      margin: 0 atuo;
+      gap: 4px;
+      height: 100%;
+    }
+
+    header .header-side-menu-box .leng>button {
+      border-radius:20px;
+      background-color: #666;
+      padding: 4px 30px;
+      box-shadow: none;
+    }
+
+    header .header-side-menu-box .leng>button>span {
+      font-size: clamp(20px, 2.53vh, 24px);
+      /* font-size: 24px; */
+      font-weight: var(--fw-b);
+      color: #222;
+      cursor: pointer;
+    }
+
+
+
     @media (max-width:1200px) and (min-width:769px) {
       header .header-inner>.container {
         max-width: 1000px;
@@ -536,7 +634,6 @@
 
       header .header-inner .logo-box {
         width: 140px;
-        height: 29px;
       }
 
       header .header-inner .menu-box {
@@ -580,8 +677,35 @@
       }
     }
 
-    @media (max-width:768px) and (min-width:551px){
-      
+    @media (max-width:768px) and (min-width:551px) {
+      header .header-inner>.container {
+        max-width: auto;
+        padding: 0 20px;
+      }
+
+      header .header-inner .logo-box {
+        width: 140px;
+      }
+
+      header .header-inner .menu-box {
+        display: none;
+      }
+
+      header .header-inner .btn-box {
+        width: 32px;
+        height: 32px;
+        gap: 6px;
+      }
+
+      header .header-inner .btn-box>div {
+        width: 100%;
+        height: 2px;
+      }
+
+      header .header-inner .logo-box {
+        width: 140px;
+        height: 29px;
+      }
     }
   </style>
 
