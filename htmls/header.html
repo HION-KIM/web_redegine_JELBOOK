@@ -88,7 +88,8 @@
 
           <nav class="menu-box">
             <ul>
-              <li><a href="#"><span>회사소개</span></a>
+              <li>
+                <a href="#"><span>회사소개</span></a>
                 <ul>
                   <li><a href="#"><span>출판사 소개</span></a></li>
                   <li><a href="#"><span>구입처 안내</span></a></li>
@@ -152,6 +153,7 @@
       padding: 0 20px;
       box-sizing: border-box;
     }
+
     header .header-inner .logo-box {
       width: 200px;
       height: 41px;
@@ -260,18 +262,17 @@
     header .header-inner .menu-box>ul>li:hover>div>ul {
       transition: max-height .7s ease;
       max-height: 250px;
-
     }
 
-    header .header-inner .menu-box>ul>li>div>ul>li {
-      font-size: 16;
-      font-weight: var(--fw-m);
-      white-space: nowrap;
-
+    header .header-inner .menu-box>ul>li>div>ul>li>a {
+      text-align: center;
     }
 
     header .header-inner .menu-box>ul>li>div>ul>li>a>span {
       text-align: center;
+      font-size: 16px;
+      font-weight: var(--fw-m);
+      white-space: nowrap;
     }
 
     header .header-inner .btn-box {
@@ -310,8 +311,8 @@
       width: 100vw;
       height: 100vh;
       display: flex;
-      /* border: dashed red; */
       clip-path: circle(0% at 50% 50%);
+      /* clip-path: circle(100% at 50% 50%); */
       transition: all .7s ease;
     }
 
@@ -363,6 +364,7 @@
       display: flex;
       flex-direction: column;
       background-color: #1A1A1A;
+      overflow-y: auto;
     }
 
     header .header-menu-box>.contents>.logo-box {
@@ -456,16 +458,16 @@
     }
 
     header .header-menu-box>.contents>.menu-box>ul>li {
-      width: clamp(160px, 23.16vh, 220px);
-      /* width: 220px; */
-      position: relative;
-
-      /* border:solid blue; */
+      width: 100%;
+      display: flex;
+      align-items: center;
     }
 
     header .header-menu-box>.contents>.menu-box>ul>li>a {
-      width: 100%;
+      width: clamp(160px, 23.16vh, 220px);
       text-align: center;
+      flex-shrink: 0;
+      align-self: flex-start;
     }
 
     header .header-menu-box>.contents>.menu-box>ul>li>a>span {
@@ -476,15 +478,13 @@
     }
 
     header .header-menu-box>.contents>.menu-box>ul>li>ul {
-      position: absolute;
-      left: 100%;
-      top: 0;
       display: flex;
       height: 100%;
       align-items: center;
       gap: 16px;
       /* border:solid red; */
       white-space: nowrap;
+      flex-wrap: wrap;
     }
 
     header .header-menu-box>.contents>.menu-box>ul>li>ul>li>a>span {
@@ -528,7 +528,59 @@
       height: 100%;
     }
 
-    @media (max-width:1200px) and (min-width:768px){
+    @media (max-width:1200px) and (min-width:769px) {
+      header .header-inner>.container {
+        max-width: 1000px;
+        padding: 0 40px;
+      }
+
+      header .header-inner .logo-box {
+        width: 140px;
+        height: 29px;
+      }
+
+      header .header-inner .menu-box {
+        max-width: 640px;
+      }
+
+      header .header-inner .menu-box>ul>li>div>ul {
+        gap: 12px;
+      }
+
+      header .header-inner .menu-box>ul>li>a>span {
+        font-size: 16px;
+      }
+
+      header .header-inner .menu-box>ul>li>div>ul>li>a>span {
+        font-size: 14px;
+      }
+
+      header .header-inner .btn-box {
+        width: 32px;
+        height: 32px;
+        gap: 6px;
+      }
+
+      header .header-inner .btn-box>div {
+        width: 100%;
+        height: 2px;
+      }
+
+      header .header-menu-box>.closed-btn {
+        width: 42px;
+        aspect-ratio: 1 / 1;
+      }
+
+      header .header-menu-box>.background-img {
+        display: none;
+      }
+
+      header .header-menu-box>.contents {
+        width: 100%;
+      }
+    }
+
+    @media (max-width:768px) and (min-width:551px){
       
     }
   </style>
