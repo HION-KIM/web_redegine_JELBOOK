@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헤더 배너</title>
+
+    <!-- Script Jquery's JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Link inner's CSS -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div>
+        <main>
+            <section class="sec-1-banner">
+                <div class="container">
+                    <div class="text-box-1">
+                        <div>
+                            <span>New</span>
+                        </div>
+                        <div>
+                            <img src="../imgs/img-banner-object-text-h2.svg" alt="텍스트 이미지">
+                        </div>
+                        <div>
+                            <img src="../imgs/img-banner-object-text-h1.svg" alt="텍스트 이미지">
+                        </div>
+
+                        <div>
+                            <p><span>다양한 독서 활동</span>으로 아마존을 구하고,<br>
+                                디지털 세상의 <span>온라인 도덕</span>을 회복하세요!</p>
+                        </div>
+                        <div class="banner-btn">
+                            <a href="#"><span>자세히 보기</span></a>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="../imgs/img-banner-object.png" alt="배너 이미지">
+                    </div>
+                    <div class="text-box-2">
+                        <div>
+                            <span>New</span>
+                        </div>
+                        <div>
+                            <div>
+                                남극에 이어 <span>정글</span>을 구하라!
+                            </div>
+                            <div>
+                                <img src="../imgs/img-banner-object-text-h2.svg" alt="텍스트 이미지">
+                            </div>
+                            <div>
+                                <img src="../imgs/img-banner-object-text-h1.svg" alt="텍스트 이미지">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <p><span>다양한 독서 활동</span>으로 아마존을 구하고,<br>
+                                    디지털 세상의 <span>온라인 도덕</span>을 회복하세요!</p>
+                            </div>
+                            <div class="banner-btn">
+                                <a href="#"><span>자세히 보기</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <style>
+        .sec-1-banner {
+            background-image: url(../imgs/img-banner-object-background.jpg);
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .sec-1-banner>.container {
+            max-width: 1440px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            box-sizing: border-box;
+        }
+
+        .sec-1-banner .text-box-1 {
+            width: 640px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .sec-1-banner .text-box-1>div:nth-child(1) {
+            background-image: url(../imgs/img-banner-object-textbackgrouind.svg);
+            object-fit: cover;
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            aspect-ratio: 1 / 1;
+
+            font-size: 24px;
+            font-weight: var(--fw-m);
+
+            position: absolute;
+            left: 3%;
+            top: -20%;
+        }
+
+        .sec-1-banner .text-box-1>div:nth-child(2) {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .sec-1-banner .text-box-1>div:nth-child(3) {
+            width: 240px;
+            margin: 0 auto;
+        }
+
+        .sec-1-banner .text-box-1>div:nth-child(4) {
+            color: #fff;
+            font-size: 22px;
+            font-weight: var(--fw-r);
+            text-align: center;
+
+            margin: 40px 0;
+        }
+
+        .sec-1-banner .text-box-1>div:nth-child(4) span {
+            font-weight: var(--fw-b);
+        }
+
+        .sec-1-banner .text-box-1>div:nth-child(5) {
+            margin: 0 auto;
+            width: 300px;
+            height: 44px;
+        }
+
+        .sec-1-banner .text-box-1>div:nth-child(5)>a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: var(--fw-m);
+
+            height: 100%;
+            box-sizing: border-box;
+            border-radius: 32px;
+            background-color: #C7FAD9;
+
+            position: relative;
+
+
+        }
+
+        .sec-1-banner .text-box-1>div:nth-child(5)>a::after {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+
+            background-image: url(../imgs/icon-arr-right.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            position: absolute;
+            top: 50%;
+            right: 20px;
+
+            transform: translateY(-50%);
+        }
+
+        .sec-1-banner .text-box-1>div>img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .sec-1-banner .img-box {
+            width: 500px;
+            aspect-ratio: 1 /1;
+        }
+
+        .sec-1-banner .img-box>img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .sec-1-banner .text-box-2 {
+            display: none;
+            width: 100%;
+            align-items: flex-end;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 5%;
+        }
+
+        .sec-1-banner .text-box-2>div:nth-child(1) {
+            background-image: url(../imgs/img-banner-object-textbackgrouind.svg);
+            object-fit: cover;
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            aspect-ratio: 1 / 1;
+
+            font-size: 24px;
+            font-weight: var(--fw-m);
+
+            position: absolute;
+            left: 0;
+            top: -22%;
+        }
+
+        .sec-1-banner .text-box-2>div:nth-child(2)>div:nth-child(1) {
+            display: none;
+            font-size: 24px;
+            font-weight: var(--fw-b);
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .sec-1-banner .text-box-2>div:nth-child(2)>div:nth-child(1)>span {
+            color: #c7fad9;
+        }
+
+        .sec-1-banner .text-box-2>div:nth-child(2)>div:nth-child(2) {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        .sec-1-banner .text-box-2>div:nth-child(2)>div:nth-child(3) {
+            width: 180px;
+            margin: 0 auto;
+        }
+
+        .sec-1-banner .text-box-2>div:nth-child(3)>div:first-child {
+            color: #fff;
+            font-size: 20px;
+            font-weight: var(--fw-r);
+            text-align: right;
+
+            margin-bottom: 28px;
+        }
+
+        .sec-1-banner .text-box-2>div:nth-child(3)>div:first-child span {
+            font-weight: var(--fw-b);
+        }
+
+        .sec-1-banner .text-box-2>div:nth-child(3)>div:last-child {
+            margin-left: auto;
+            width: 200px;
+            height: 38px;
+        }
+
+        .sec-1-banner .text-box-2>div:nth-child(3)>div:last-child>a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: var(--fw-m);
+
+            height: 100%;
+            box-sizing: border-box;
+            border-radius: 32px;
+            background-color: #C7FAD9;
+
+            position: relative;
+
+
+        }
+
+        .sec-1-banner .text-box-2>div:nth-child(3)>div:last-child>a::after {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+
+            background-image: url(../imgs/icon-arr-right.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            position: absolute;
+            top: 50%;
+            right: 20px;
+
+            transform: translateY(-50%);
+        }
+
+        .sec-1-banner .text-box-2>div>img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        @media (max-width:1200px) and (min-width:769px) {
+
+            .sec-1-banner>.container {
+                max-width: 1000px;
+                justify-content: flex-start;
+                align-items: flex-end;
+            }
+
+            .sec-1-banner .img-box {
+                position: absolute;
+
+                width: 550px;
+                top: 8%;
+                left: 50%;
+
+                transform: translateX(-50%);
+            }
+
+            .sec-1-banner .text-box-1 {
+                display: none;
+            }
+
+            .sec-1-banner .text-box-2 {
+                display: flex;
+            }
+        }
+
+        @media (max-width:768px) and (min-width:551px) {
+            .sec-1-banner>.container {
+                max-width: unset;
+                padding: 0 20px;
+                justify-content: flex-start;
+                align-items: flex-end;
+            }
+
+            .sec-1-banner .img-box {
+                position: absolute;
+
+                width: 450px;
+                top: 8%;
+                left: 50%;
+
+                transform: translateX(-50%);
+            }
+
+            .sec-1-banner .text-box-1 {
+                display: none;
+            }
+
+            .sec-1-banner .text-box-2 {
+                display: flex;
+                padding-right: 0;
+                padding-left: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(1) {
+                width: 60px;
+                font-size: 16px;
+                left: 180px;
+                top: 12%;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(2)>div:nth-child(1) {
+                display: block;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(2)>div:nth-child(2) {
+                display: none;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(2)>div:nth-child(3) {
+                width: 160px;
+                margin: 0 0;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(3)>div:first-child {
+                text-align: left;
+                margin-top: 20px;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(3)>div:last-child {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width:550px) {
+
+            .sec-1-banner>.container {
+                max-width: unset;
+                min-width: 350px;
+                padding: 0 20px;
+                justify-content: flex-start;
+                align-items: flex-end;
+            }
+
+            .sec-1-banner .img-box {
+                position: absolute;
+                /* max-width: 450px; */
+                width:400px;
+                /* width: 100%; */
+                top: 8%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .sec-1-banner .text-box-1 {
+                display: none;
+            }
+
+            .sec-1-banner .text-box-2 {
+                display: flex;
+                padding-right: 0;
+                padding-left: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(1) {
+                width: 46px;
+                font-size: 14px;
+                left: 160px;
+                top: 16%;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(2)>div:nth-child(1) {
+                display: block;
+                margin-bottom: 16px;
+                font-size: 20px;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(2)>div:nth-child(2) {
+                display: none;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(2)>div:nth-child(3) {
+                width: 120px;
+                margin: 0 0;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(3)>div:first-child {
+                text-align: left;
+                margin-top: 16px;
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(3)>div:last-child {
+                margin-left: 0;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(3)>div:last-child {
+                width: 160px;
+                height: 30px;
+            }
+
+            .sec-1-banner .text-box-2>div:nth-child(3)>div:last-child>a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</body>
+
+</html>

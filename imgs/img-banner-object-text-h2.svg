@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660.63 89.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c7fad9;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: Pretendard-Bold, Pretendard;
+        font-size: 49.03px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <text class="cls-2" transform="translate(107.01 67.6) rotate(-9.06) scale(.96 1)"><tspan x="0" y="0">남</tspan></text>
+    <text class="cls-2" transform="translate(145.18 61.49) rotate(-7.58) scale(.96 1)"><tspan x="0" y="0">극</tspan></text>
+    <text class="cls-2" transform="translate(183.49 56.36) rotate(-6.05) scale(.96 1)"><tspan x="0" y="0">에</tspan></text>
+    <text class="cls-2" transform="translate(222.02 52.39) rotate(-5.07) scale(.96 1)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-2" transform="translate(231.01 51.44) rotate(-4.08) scale(.96 1)"><tspan x="0" y="0">이</tspan></text>
+    <text class="cls-2" transform="translate(269.53 48.67) rotate(-2.42) scale(.96 1)"><tspan x="0" y="0">어</tspan></text>
+    <text class="cls-2" transform="translate(308.23 47.15) rotate(-1.36) scale(.96 1)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-1" transform="translate(317.24 46.78) rotate(-.29) scale(.96 1)"><tspan x="0" y="0">정</tspan></text>
+    <text class="cls-1" transform="translate(355.85 46.55) rotate(1.49) scale(.96 1)"><tspan x="0" y="0">글</tspan></text>
+    <text class="cls-2" transform="translate(394.45 47.52) rotate(3.31) scale(.96 1)"><tspan x="0" y="0">을</tspan></text>
+    <text class="cls-2" transform="translate(433.07 49.89) rotate(4.46) scale(.96 1)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-2" transform="translate(442.08 50.42) rotate(5.62) scale(.96 1)"><tspan x="0" y="0">구</tspan></text>
+    <text class="cls-2" transform="translate(480.48 54.16) rotate(7.53) scale(.96 1)"><tspan x="0" y="0">하</tspan></text>
+    <text class="cls-2" transform="translate(518.73 59.19) rotate(9.48) scale(.96 1)"><tspan x="0" y="0">라</tspan></text>
+    <text class="cls-2" transform="translate(556.86 65.69) rotate(10.78) scale(.96 1)"><tspan x="0" y="0">!</tspan></text>
+  </g>
+</svg>
