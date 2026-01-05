@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재능스스로북 브랜드</title>
+
+    <!-- Script GSAP's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- Script Scrolltrigger's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Script Jquery's JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Link inner's CSS -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <main>
+        <section class="Scroll">
+            "Scroll Down ↓"
+        </section>
+        <section class="sec-2-brand">
+            <div class="container">
+                <div class="content">
+                    <div>재능교육의 어린이 책은</div>
+                    <div>어린이가 스스로 행복한 미래를 꿈꾸고</div>
+                    <div>만들어 가도록 돕습니다</div>
+                </div>
+                <div class="background">
+                    <img src="../imgs/img-sec2-background.jpg" alt="">
+                </div>
+                <div class="object object-1"><img src="../imgs/img-brandsec-object-1.png" alt="브랜드섹션캐릭터"></div>
+                <div class="object object-2"><img src="../imgs/img-brandsec-object-2.png" alt="브랜드섹션캐릭터"></div>
+                <div class="object object-3"><img src="../imgs/img-brandsec-object-3.png" alt="브랜드섹션캐릭터"></div>
+            </div>
+        </section>
+
+        <section class="Scroll">
+            "Scroll Up ↑"
+        </section>
+    </main>
+
+    <style>
+        .Scroll {
+            height: 100vh;
+            font-size: 50px;
+
+        }
+
+        .sec-2-brand {
+            overflow: hidden;
+        }
+
+        .sec-2-brand>.container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: solid red;
+
+            position: relative;
+        }
+
+        .sec-2-brand>.container>div:not(:first-child) {
+            position: absolute;
+        }
+
+        .sec-2-brand>.container>.content>div {
+            font-size:clamp(18px, 2.5vw, 48px);/* font-size: 48px; */
+            font-weight: var(--fw-m);
+            color: #fff;
+            text-align: center;
+        }
+
+        .sec-2-brand>.container>.content>div:nth-child(2) {
+            font-size:clamp(24px, 2.81vw, 54px);/* font-size: 54px; */
+            font-weight: var(--fw-eb);
+            margin: 8px 0;
+        }
+
+        .sec-2-brand>.container>.content>div:nth-child(2)::after {
+            content: "";
+            display: block;
+            background-image: url(../imgs/background-ellipese.png);
+
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 100%;
+            height: 257px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .sec-2-brand>.container>.background {
+            width: 100vw;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        .sec-2-brand>.container>.background>img {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+
+        .sec-2-brand>.container>.object-1 {
+            /* width: 610px; */
+            width:clamp(209px, 31.77vw,610px);
+            transform: rotate(7.23deg);
+            left: 2%;
+            /* top: 25%; */
+            /* top:-140%; */
+            top: 120%;
+            z-index: -1;
+            border: solid red;
+        }
+
+        .sec-2-brand>.container>.object-2 {
+            /* width: 387px; */
+            width:clamp(132px, 20.16vw,387px);
+            right: 2%;
+            /* top: -20%; */
+            /* top:-185%; */
+            top: 120%;
+            z-index: -1;
+            border: solid red;
+        }
+
+        .sec-2-brand>.container>.object-3 {
+            width: 283px;
+            width:clamp(97px, 14.74vw,283x);
+            transform: rotate(-8.17deg);
+            right: 4%;
+            /* top: 65%; */
+            /* top:-100%; */
+            top: 120%;
+            z-index: -1;
+            border: solid red;
+        }
+        .sec-2-brand>.container>.object>img{
+            width:100%;
+            object-fit: cover;
+        }
+    </style>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        var $background = $('.sec-2-brand>.container>.background>img')
+        var $object1 = $('.sec-2-brand>.container>.object-1')
+        var $object2 = $('.sec-2-brand>.container>.object-2')
+        var $object3 = $('.sec-2-brand>.container>.object-3')
+
+        gsap.to($background, {
+            yPercent: -50,
+            scrollTrigger: {
+                trigger: ".sec-2-brand",
+                pin: true,
+                start: "top top",
+                end: "+=11000",
+                scrub: true,
+            }
+        });
+
+        // gsap.from($object1, {
+        //     y: 2800,
+        //     scale: 1.2,
+        //     scrollTrigger: {
+        //         trigger: $object1,
+        //         start: "top+=600 top",
+        //         end: "+=7000",
+        //         scrub: true,
+        //         markers: true,
+        //     }
+        // });
+
+
+        // gsap.from($object2, {
+        //     y: 2800,
+        //     scale: 1.2,
+        //     scrollTrigger: {
+        //         trigger: $object2,
+        //         start: "top top",
+        //         end: "+=7000",
+        //         scrub: true,
+        //         markers: true,
+        //     }
+        // });
+        // gsap.from($object3, {
+        //     y: 2800,
+        //     scale: 1.2,
+        //     scrollTrigger: {
+        //         trigger: $object3,
+        //         start: "top+=1200 top",
+        //         end: "+=7000",
+        //         scrub: true,
+        //         markers: true,
+        //     }
+        // });
+
+        gsap.set($object1, { scale: 1.7 })
+        gsap.set($object2, { scale: 1.7 })
+        gsap.set($object3, { scale: 1.7 })
+
+        gsap.to($object1, {
+            y: -1700,
+            scale: 1,
+            scrollTrigger: {
+                trigger: $object1,
+                start: "top+=3000 top",
+                end: "+=5000",
+                scrub: true,
+                // markers: true,
+            }
+        });
+
+
+        gsap.to($object2, {
+            y: -1700,
+            scale: 1,
+            scrollTrigger: {
+                trigger: $object2,
+                start: "top top",
+                end: "+=5000",
+                scrub: true,
+                // markers: true,
+            }
+        });
+        gsap.to($object3, {
+            y: -1700,
+            scale: 1,
+            scrollTrigger: {
+                trigger: $object3,
+                start: "top+=6000 top",
+                end: "+=5000",
+                scrub: true,
+                markers: true,
+            }
+        });
+
+    </script>
+</body>
+
+</html>
