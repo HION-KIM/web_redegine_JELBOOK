@@ -1,11 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>재능스스로북 책 추천</title>
+
+    <!-- Script GSAP's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- Script Scrolltrigger's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Script Jquery's JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Script Swiper' JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Link Swiper' CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- Link inner's CSS -->
+    <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-    
+
+    <main>
+        <section class="test"></section>
+        <section class="sec-3-books">
+            <div class="text-box">
+                <div class="img-box">
+                    <img src="../imgs/logo_sec3_ww.png" alt="로고 이미지">
+                </div>
+                <div>자연과 소통하며 꿈을 키우는</div>
+                <div>행복한 어린이를 위한 최신 우수 그림책</div>
+            </div>
+            <div class="content">
+                <div class="marqee-wrap">
+                    <div class="marqee marqee-1">
+                        <div><img src="../imgs/img_sec3_marquee_1.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_2.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_3.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_4.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_5.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_6.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_7.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_8.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_9.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_10.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_11.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_12.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_13.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_14.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_1.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_2.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_3.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_4.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_5.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_6.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_7.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_8.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_9.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_10.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_11.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_12.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_13.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_14.jpg" alt="마퀴_이미지"></div>
+                    </div>
+                </div>
+                <div class="marqee-wrap">
+                    <div class="marqee marqee-2">
+                        <div><img src="../imgs/img_sec3_marquee_15.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_16.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_17.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_18.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_19.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_20.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_21.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_22.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_23.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_24.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_25.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_26.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_27.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_28.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_15.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_16.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_17.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_18.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_19.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_20.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_21.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_22.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_23.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_24.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_25.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_26.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_27.jpg" alt="마퀴_이미지"></div>
+                        <div><img src="../imgs/img_sec3_marquee_28.jpg" alt="마퀴_이미지"></div>
+                    </div>
+                </div>
+
+                <div class="swiper-wrap">
+                    <div>
+                        <div>
+                            <div class="index">오늘의 책 추천</div>
+                            <div class="text">재능스스로북에서 엄선한 추천 콘텐츠를 만나보세요!</div>
+                            <div class="tab-menu-box">
+                                <div class="active">
+                                    <span>01</span>
+                                    <span>수상 추천 도서</span>
+                                </div>
+                                <div>
+                                    <span>02</span>
+                                    <span>MD 추천 도서</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <a href="#"><span>추천도서 보러 가기</span></a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-box-wrap">
+                        <div class="swiper-box active">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="../imgs/img-swiper-box-1-1.jpg" alt="추천도서 이미지">
+                                    </div>
+                                    <div class="swiper-slide"><img src="../imgs/img-swiper-box-1-2.jpg" alt="추천도서 이미지">
+                                    </div>
+                                    <div class="swiper-slide"><img src="../imgs/img-swiper-box-1-3.jpg" alt="추천도서 이미지">
+                                    </div>
+                                    <div class="swiper-slide"><img src="../imgs/img-swiper-box-1-4.jpg" alt="추천도서 이미지">
+                                    </div>
+                                    <div class="swiper-slide"><img src="../imgs/img-swiper-box-1-5.jpg" alt="추천도서 이미지">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-box">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="../imgs/img-swiper-box-2-1.jpg" alt="추천도서 이미지">
+                                    </div>
+                                    <div class="swiper-slide"><img src="../imgs/img-swiper-box-2-2.jpg" alt="추천도서 이미지">
+                                    </div>
+                                    <div class="swiper-slide"><img src="../imgs/img-swiper-box-2-3.jpg" alt="추천도서 이미지">
+                                    </div>
+                                    <div class="swiper-slide"><img src="../imgs/img-swiper-box-2-4.jpg" alt="추천도서 이미지">
+                                    </div>
+                                    <div class="swiper-slide"><img src="../imgs/img-swiper-box-2-5.jpg" alt="추천도서 이미지">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="test"></section>
+    </main>
+
+    <style>
+        .test {
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+        }
+
+        .sec-3-books {
+            background-color: #333;
+            text-align: center;
+        }
+
+        .sec-3-books>.text-box {
+            display: inline-block;
+            margin: 132px 0 185px;
+        }
+
+        .sec-3-books>.text-box>.img-box {
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        .sec-3-books>.text-box>.img-box>img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .sec-3-books>.text-box>div:nth-child(2) {
+            color: #fff;
+            font-size: 48px;
+            font-weight: var(--fw-m);
+            margin: 16px 0 8px;
+        }
+
+        .sec-3-books>.text-box>div:nth-child(3) {
+            color: #fff;
+            font-size: 54px;
+            font-weight: var(--fw-eb);
+        }
+
+        .sec-3-books>.content {
+            width: 100%;
+            background-color: #fff;
+            padding-top: 160px;
+            padding-bottom: 115px;
+
+            border-radius: 40px 40px 0 0;
+        }
+
+        .sec-3-books>.content>.marqee-wrap {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .sec-3-books>.content>.marqee-wrap>.marqee {
+            display: flex;
+            height: 253px;
+            gap: 36px;
+            width: max-content;
+
+        }
+
+        .sec-3-books>.content>.marqee-wrap>.marqee-1 {
+            animation: marquee1 20s linear infinite;
+        }
+
+        .sec-3-books>.content>.marqee-wrap>.marqee-2 {
+            margin-top: 20px;
+            animation: marquee2 20s linear infinite;
+        }
+
+        .sec-3-books>.content>.marqee-wrap>.marqee>div {
+            height: 100%;
+        }
+
+        .sec-3-books>.content>.marqee-wrap>.marqee>div>img {
+            height: 100%;
+        }
+
+        @keyframes marquee1 {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes marquee2 {
+            from {
+                transform: translateX(-50%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+
+        .sec-3-books>.content>.swiper-wrap {
+            margin-top: 275px;
+            display: flex;
+            padding: 0 40px;
+            justify-content: space-between;
+        }
+
+        .sec-3-books>.content>.swiper-wrap>div:first-child {
+            flex-shrink: 0;
+            margin-right: 40px;
+            text-align: left;
+        }
+
+
+
+        .sec-3-books>.content>.swiper-wrap>div:first-child .index {
+            font-size: 48px;
+            font-weight: var(--fw-b);
+            letter-spacing: 0.96px;
+            margin-bottom: 20px;
+            text-align: left;
+
+        }
+
+        .sec-3-books>.content>.swiper-wrap>div:first-child .text {
+            font-size: 24px;
+            font-weight: var(--fw-m);
+            letter-spacing: 0.48px;
+            text-align: left;
+        }
+
+        .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box {
+            margin: 68px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div {
+            padding: 30px;
+            position: relative;
+            cursor: pointer;
+            color: #808080;
+        }
+
+        .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div.active {
+            color: #222;
+        }
+
+        .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background-color: #e6e6e6;
+        }
+
+        .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div.active::before {
+            background-color: var(--color-main);
+        }
+
+        .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div>span:first-child {
+            font-size: 28px;
+            font-weight: var(--fw-m);
+            display: block;
+            text-align: left;
+        }
+
+        .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div>span:last-child {
+            font-size: 28px;
+            font-weight: var(--fw-b);
+            display: block;
+            text-align: left;
+        }
+
+        .sec-3-books>.content>.swiper-wrap>div:first-child .btn {
+            display: inline-block;
+            font-size: 28px;
+            font-weight: var(--fw-sb);
+            color: #fff;
+            padding: 16px 32px;
+            border-radius: 50px;
+            background-color: var(--color-main);
+        }
+
+        .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap>.swiper-box.active {
+            display: flex;
+        }
+
+        .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap>.swiper-box {
+            display: none;
+        }
+
+        .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap .swiper {
+            width: 100%;
+            height: 720px;
+        }
+
+        .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            width: min-content;
+            height: 704px;
+        }
+
+
+
+        .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap .swiper-slide>img {
+            display: block;
+            height: 100%;
+        }
+
+        .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap .swiper-pagination {
+            top: auto;
+            bottom: 0;
+            height: 6px;
+        }
+
+        .swiper-pagination-progressbar-fill {
+            background-color: var(--color-main) !important;
+        }
+
+
+        @media (max-width:1200px) and (min-width:769px) {
+            .sec-3-books>.text-box>.img-box {
+                width: 160px;
+            }
+
+            .sec-3-books>.text-box>div:nth-child(2) {
+                font-size: 36px;
+            }
+
+            .sec-3-books>.text-box>div:nth-child(3) {
+                font-size: 40px;
+            }
+
+            .sec-3-books>.content>.marqee-wrap>.marqee {
+                height: 200px;
+                gap: 18px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap {
+                margin-top: 140px;
+                padding: 0 20px;
+                flex-direction: column;
+                justify-content: auto;
+                gap: 40px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child {
+                margin-right: 0;
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .index {
+                font-size: 36px;
+
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .text {
+                font-size: 20px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box {
+                margin: 28px 0 0 0;
+                flex-direction: row;
+                align-items: stretch;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div {
+                padding: 0 0 24px 0;
+                position: relative;
+                cursor: pointer;
+                color: #808080;
+                flex: 1;
+            }
+        }
+
+        @media (max-width:768px) and (min-width:551px) {}
+
+        @media (max-width:550px) {}
+    </style>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        function sec3SwiperInit() {
+            var swiper = new Swiper(".sec-3-books>.content>.swiper-wrap>.swiper-box-wrap .swiper", {
+                slidesPerView: "auto",
+                spaceBetween: 40,
+
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar",
+                },
+            });
+        }
+
+        function sec3SwipertabInit() {
+            var $tabMenu = $('.sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div');
+            var $swiper = $('.sec-3-books>.content>.swiper-wrap>.swiper-box-wrap>.swiper-box');
+
+            $tabMenu.on('click', function () {
+
+                var $index = $(this).index();
+
+                $(this).addClass('active').siblings().removeClass('active');
+                $swiper.eq($index).addClass('active').siblings().removeClass('active');
+
+            });
+        }
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.sec-3-books',
+                start: 'top top+=500',
+                end: '+=1000',
+                scrub: true,
+                markers: true,
+            }
+        });
+
+        tl.fromTo(
+            '.sec-3-books > .content',
+            { clipPath: 'inset(0 50% 0 50% round 40px 40px 0 0)' },
+            { clipPath: 'inset(0 0% 0 0% round 40px 40px 0 0)' }
+        );
+
+
+        sec3SwiperInit();
+        sec3SwipertabInit();
+
+
+    </script>
+
 </body>
+
 </html>
