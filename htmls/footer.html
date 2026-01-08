@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>재능스스로북 푸터</title>
+  <!-- Script GSAP's JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <!-- Script Scrolltrigger's JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Script Jquery's JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Script Swiper' JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- Link Swiper' CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <!-- Link inner's CSS -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <footer>
+    <div class="container">
+      <div class="logo-box"><img src="../imgs/logo_sec3_ww.png" alt="로고 화이트"></div>
+      <div class="content">
+        <div>
+          <div>
+            <div><a href="#">개인정보처리방침</a></div>
+            <div><a href="#">이용약관</a></div>
+            <div><a href="#">회사소개</a></div>
+            <div><a href="#">이메일주소무단수집거부</a></div>
+          </div>
+          <div>
+            <div>(주)재능교육</div>
+            <div>대표자:박규태</div>
+            <div>사업자번호 : 204-81-03990</div>
+            <div>통신판매업 신고번호 : 제 2007-서울동대문-3180호</div>
+            <div>주소 : 서울특별시 종로구 창경궁로 293</div>
+            <div>전화 : 1588-1132</div>
+          </div>
+          <div>Copyright ⓒ JEI. All rights reserved.</div>
+        </div>
+        <div>
+          <div class="btn">
+            JEL Family Site
+          </div>
+          <div class="sns-box">
+            <div><a href="#"><img src="../imgs/icon_sns_instargram.svg" alt="sns이미지"></a></div>
+            <div><a href="#"><img src="../imgs/icon_sns_facebook.svg" alt="sns이미지"></a></div>
+            <div><a href="#"><img src="../imgs/icon_sns_naver.svg" alt="sns이미지"></a></div>
+            <div><a href="#"><img src="../imgs/icon_sns_mom.svg" alt="sns이미지"></a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <style>
+    footer {
+      padding: 120px 40px;
+      background-color: #F13525;
+    }
+
+    footer>.container {
+      max-width: 1400px;
+      display: flex;
+      gap: 40px;
+      margin: 0 auto;
+
+    }
+
+    footer>.container>.logo-box {
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    footer>.container>.logo-box>img {
+      width: 100%;
+    }
+
+    footer>.container>.content {
+      flex-grow: 1;
+      font-size: 18px;
+      font-weight: var(--fw-m);
+      color: #fff;
+      display: flex;
+    }
+
+    footer>.container>.content>div:nth-child(1)>div:not(:last-child) {
+      display: flex;
+      gap: 4px 16px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    footer>.container>.content>div:nth-child(2)>.btn {
+      width: 214px;
+      padding: 10px 30px;
+      box-sizing: border-box;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    footer>.container>.content>div:nth-child(2)>.btn::after {
+      content: "+";
+      display: block;
+      font-size: 18px;
+    }
+
+    footer>.container>.content>div:nth-child(2)>.sns-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 42px;
+    }
+
+    @media (max-width:1200px) and (min-width:769px) {
+      footer {
+        padding: 60px 20px;
+      }
+
+      footer>.container {
+        max-width: unset;
+        gap: 20px;
+      }
+
+      footer>.container>.logo-box {
+        width: 247px;
+      }
+
+      footer>.container>.content {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      footer>.container>.content>div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      footer>.container>.content>div:nth-child(2)>.sns-box {
+        height: 20px;
+        width: 160px
+      }
+
+      footer>.container>.content>div:nth-child(2)>.btn {
+        width: 201px;
+        padding: 10px 30px;
+        margin-bottom: 0;
+        font-size: 16px;
+      }
+
+      footer>.container>.content>div:nth-child(2)>.btn::after {
+        font-size: 16px;
+      }
+
+      footer>.container>.content>div:nth-child(2)>.sns-box>div {
+        height: 100%;
+      }
+
+      footer>.container>.content>div:nth-child(2)>.sns-box>div>a {
+        height: 100%;
+        display: block;
+      }
+
+      footer>.container>.content>div:nth-child(2)>.sns-box>div>a>img {
+        height: 100%;
+      }
+    }
+
+    @media (max-width:768px) and (min-width:551px) {
+      footer {
+        padding: 60px 20px;
+      }
+
+      footer>.container {
+        max-width: unset;
+        gap: 20px;
+        flex-direction: column;
+      }
+
+      footer>.container>.logo-box {
+        width: 247px;
+      }
+
+      footer>.container>.content {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      footer>.container>.content>div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+
+
+      footer>.container>.content>div:nth-child(2)>.btn {
+        width: 201px;
+        padding: 10px 30px;
+        margin-bottom: 0;
+        font-size: 16px;
+      }
+
+      footer>.container>.content>div:nth-child(2)>.btn::after {
+        font-size: 16px;
+      }
+
+      footer>.container>.content>div:nth-child(2)>.sns-box {
+        height: 20px;
+        width: 160px
+      }
+
+      footer>.container>.content>div:nth-child(2)>.sns-box>div {
+        height: 100%;
+      }
+
+      footer>.container>.content>div:nth-child(2)>.sns-box>div>a {
+        height: 100%;
+        display: block;
+      }
+
+      footer>.container>.content>div:nth-child(2)>.sns-box>div>a>img {
+        height: 100%;
+      }
+    }
+
+    @media (max-width:550px) {
+      footer {
+        padding: 60px 20px;
+        min-width: 350px;
+      }
+
+      footer>.container {
+        max-width: unset;
+        gap: 20px;
+        flex-direction: column;
+      }
+
+      footer>.container>.logo-box {
+        width: 247px;
+      }
+
+      footer>.container>.content {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      footer>.container>.content>div:nth-child(1)>div:nth-child(1){
+        font-size:18px;
+      }
+
+      footer>.container>.content>div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        gap:40px;
+      }
+
+
+
+      footer>.container>.content>div:nth-child(2)>.btn {
+        width: 201px;
+        padding: 10px 30px;
+        margin-bottom: 0;
+        font-size: 16px;
+      }
+
+      footer>.container>.content>div:nth-child(2)>.btn::after {
+        font-size: 16px;
+      }
+
+      footer>.container>.content>div:nth-child(2)>.sns-box {
+        height: 20px;
+        width: 160px
+      }
+
+      footer>.container>.content>div:nth-child(2)>.sns-box>div {
+        height: 100%;
+      }
+
+      footer>.container>.content>div:nth-child(2)>.sns-box>div>a {
+        height: 100%;
+        display: block;
+      }
+
+      footer>.container>.content>div:nth-child(2)>.sns-box>div>a>img {
+        height: 100%;
+      }
+    }
+  </style>
+
+</body>
+
+</html>
