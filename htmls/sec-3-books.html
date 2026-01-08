@@ -158,6 +158,10 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="btn-bottom">
+                        <a href="#"><span>추천도서 보러 가기</span></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -336,7 +340,7 @@
         }
 
         .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div>span:last-child {
-            font-size: 28px;
+            font-size: 40px;
             font-weight: var(--fw-b);
             display: block;
             text-align: left;
@@ -345,11 +349,22 @@
         .sec-3-books>.content>.swiper-wrap>div:first-child .btn {
             display: inline-block;
             font-size: 28px;
-            font-weight: var(--fw-sb);
+            font-weight: var(--fw-m);
             color: #fff;
             padding: 16px 32px;
             border-radius: 50px;
             background-color: var(--color-main);
+        }
+
+        .sec-3-books>.content>.swiper-wrap>.btn-bottom {
+            display: none;
+            font-size: 16px;
+            font-weight: var(--fw-m);
+            color: #fff;
+            padding: 8px 28px;
+            border-radius: 50px;
+            background-color: var(--color-main);
+            align-self: center;
         }
 
         .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap {
@@ -429,6 +444,11 @@
                 justify-content: space-between;
             }
 
+            .sec-3-books>.content>.swiper-wrap>div:first-child>div:first-child {
+                flex-grow: 1;
+                max-width: 531px;
+            }
+
             .sec-3-books>.content>.swiper-wrap>div:first-child .index {
                 font-size: 36px;
 
@@ -451,11 +471,264 @@
                 color: #808080;
                 flex: 1;
             }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div>span:first-child {
+                font-size: 24px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div>span:last-child {
+                font-size: 30px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div::before {
+                left: 0;
+                top: auto;
+                bottom: 0;
+                height: 8px;
+                width: 100%;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .btn {
+                display: inline-block;
+                font-size: 24px;
+                color: #fff;
+                padding: 16px 40px;
+                align-self: flex-end;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap .swiper {
+                height: 509px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap .swiper-slide {
+                height: 493px;
+            }
         }
 
-        @media (max-width:768px) and (min-width:551px) {}
+        @media (max-width:768px) and (min-width:551px) {
+            .sec-3-books>.text-box {
+                margin: 80px 0;
+            }
 
-        @media (max-width:550px) {}
+            .sec-3-books>.text-box>.img-box {
+                width: 176px;
+            }
+
+            .sec-3-books>.text-box>div:nth-child(2) {
+                font-size: 24px;
+            }
+
+            .sec-3-books>.text-box>div:nth-child(3) {
+                font-size: 28px;
+            }
+
+            .sec-3-books>.content>.marqee-wrap>.marqee {
+                height: 160px;
+                gap: 18px;
+            }
+
+            .sec-3-books>.content {
+                padding-top: 100px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap {
+                margin-top: 140px;
+                padding: 0 20px;
+                flex-direction: column;
+                justify-content: auto;
+                gap: 40px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child {
+                margin-right: 0;
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child>div:first-child {
+                flex-grow: 1;
+                max-width: 416px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .index {
+                font-size: 36px;
+
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .text {
+                font-size: 16px;
+                white-space: nowrap;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box {
+                margin: 28px 0 0 0;
+                flex-direction: row;
+                align-items: stretch;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div {
+                padding: 0 0 24px 0;
+                position: relative;
+                cursor: pointer;
+                color: #808080;
+                flex: 1;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div>span:first-child {
+                font-size: 20px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div>span:last-child {
+                font-size: 24px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div::before {
+                left: 0;
+                top: auto;
+                bottom: 0;
+                height: 8px;
+                width: 100%;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .btn {
+                display: inline-block;
+                font-size: 16px;
+                color: #fff;
+                padding: 12px 28px;
+                align-self: flex-end;
+                white-space: nowrap;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap .swiper {
+                height: 360px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap .swiper-slide {
+                height: 344px;
+            }
+        }
+
+        @media (max-width:550px) {
+            .sec-3-books{
+                min-width: 350px;
+            }
+            .sec-3-books>.text-box {
+                margin: 80px 0;
+            }
+
+            .sec-3-books>.text-box>.img-box {
+                width: 176px;
+            }
+
+            .sec-3-books>.text-box>div:nth-child(2) {
+                font-size: 18px;
+            }
+
+            .sec-3-books>.text-box>div:nth-child(3) {
+                font-size: 24px;
+            }
+
+            .sec-3-books>.content>.marqee-wrap>.marqee {
+                height: 160px;
+                gap: 18px;
+            }
+
+            .sec-3-books>.content {
+                padding-top: 100px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap {
+                margin-top: 140px;
+                padding: 0 10px;
+                flex-direction: column;
+                justify-content: auto;
+                gap: 40px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child {
+                margin-right: 0;
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child>div:first-child {
+                flex-grow: 1;
+                max-width: unset;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .index {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .text {
+                font-size: 14px;
+                text-align: center;
+                white-space: nowrap;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box {
+                margin: 28px 0 0 0;
+                flex-direction: row;
+                align-items: stretch;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div {
+                padding: 0 0 0 0;
+                position: relative;
+                cursor: pointer;
+                color: #808080;
+                flex: 1;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div::after {
+                content: '';
+                display: block;
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                left: 100%;
+                top: 0;
+                background-color: #e6e6e6;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div>span:first-child {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div>span:last-child {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .tab-menu-box>div::before {
+                left: 0;
+                top: auto;
+                bottom: 0;
+                height: 8px;
+                width: 100%;
+                display: none;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>div:first-child .btn {
+                display: none;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap .swiper {
+                height: 254px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>.swiper-box-wrap .swiper-slide {
+                height: 241px;
+            }
+
+            .sec-3-books>.content>.swiper-wrap>.btn-bottom {
+                display: block;
+            }
+        }
     </style>
 
     <script>
@@ -469,6 +742,17 @@
                 pagination: {
                     el: ".swiper-pagination",
                     type: "progressbar",
+                },
+                breakpoints: {
+                    1200: {
+                        spaceBetween: 40,
+                    },
+                    550: {
+                        spaceBetween: 20,
+                    },
+                    0: {
+                        spaceBetween: 14,
+                    }
                 },
             });
         }
