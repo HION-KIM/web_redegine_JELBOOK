@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>재능스스로북 이벤트</title>
+  <!-- Script GSAP's JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <!-- Script Scrolltrigger's JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Script Jquery's JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Script Swiper' JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- Link Swiper' CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <!-- Link inner's CSS -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <main>
+    <section class="sec-5-event">
+      <div class="index">
+        <div class="logo-box"><img src="../imgs/logo_header-b.svg" alt="로고 블랙"></div>
+        <div class="text">이벤트</div>
+      </div>
+      <div class="content">
+        <ul>
+          <li><a href="#">
+              <span>Event 01</span>
+              <p>초코가루를 사러 가는길에<br>작가만남 이벤트!</p>
+              <div class="img-box img-box-1">
+                <img src="../imgs/img-sec5-1.png" alt="이벤트 이미지">
+              </div>
+            </a></li>
+          <li><a href="#">
+              <span>Event 02</span>
+              <p>환경그림책 2종<br>무료 나눔 이벤트!</p>
+              <div class="img-box img-box-2">
+                <img src="../imgs/img-sec5-2.jpg" alt="이벤트 이미지">
+              </div>
+              <div class="img-box img-box-3">
+                <img src="../imgs/img-sec5-3.jpg" alt="이벤트 이미지">
+              </div>
+            </a></li>
+          <li><a href="#">
+              <span>Event 03</span>
+              <p>세상에서 가장 아름다운 소원<br>출산기념 이벤트!</p>
+              <div class="img-box img-box-4">
+                <img src="../imgs/img-sec5-4.jpg" alt="이벤트 이미지">
+              </div>
+              <div class="img-box img-box-5">
+                <img src="../imgs/img-sec5-4.jpg" alt="이벤트 이미지">
+              </div>
+            </a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .sec-5-event {
+      padding: 80px 0 120px;
+    }
+
+    .sec-5-event>.index {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+
+      margin-bottom: 100px;
+    }
+
+    .sec-5-event>.index>.logo-box {
+      width: 200px;
+    }
+
+    .sec-5-event>.index>.logo-box>img {
+      width: 100%;
+    }
+
+    .sec-5-event>.index>.text {
+      font-size: 42px;
+      font-weight: var(--fw-b);
+    }
+
+    .sec-5-event>.content {
+      padding: 0 40px;
+      height: 460px;
+    }
+
+    .sec-5-event>.content>ul {
+      display: flex;
+      gap: 40px;
+      height: 100%;
+    }
+
+    .sec-5-event>.content>ul>li {
+      flex: 1;
+      border-radius: 25px;
+      overflow: hidden;
+      background-color: #F13525;
+      color: #fff;
+      padding: 40px 32px;
+      box-sizing: border-box;
+    }
+
+    .sec-5-event>.content>ul>li:nth-child(2) {
+      background-color: #AACC18;
+    }
+
+    .sec-5-event>.content>ul>li:nth-child(3) {
+      background-color: #000032;
+    }
+
+    .sec-5-event>.content>ul>li>a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .sec-5-event>.content>ul>li>a>span {
+      display: block;
+      font-size: 16px;
+      font-weight: var(--fw-sb);
+      margin-bottom: 24px;
+    }
+
+    .sec-5-event>.content>ul>li>a>p {
+      display: block;
+      position: relative;
+      font-size: 28px;
+      font-weight: var(--fw-b);
+      line-height: 38.4px;
+      z-index: 1;
+    }
+
+    .sec-5-event>.content>ul>li>a>.img-box {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transition: all .4s ease;
+    }
+
+    .sec-5-event>.content>ul>li>a>.img-box>img {
+      width: 100%;
+    }
+
+    .sec-5-event>.content>ul>li>a>.img-box-1 {
+      width: clamp(300px, 19.90vw, 382px);
+      transform: rotate(-4deg);
+      bottom: -30%;
+      right: -20%;
+      
+    }
+
+    .sec-5-event>.content>ul>li:hover>a>.img-box-1 {
+      transform: rotate(-16.11deg);
+      bottom: -25%;
+      right: -18%;
+    }
+
+    .sec-5-event>.content>ul>li>a>.img-box-2 {
+      width: clamp(200px, 15.63vw, 300px);
+      transform: rotate(6deg);
+      bottom: -20%;
+      right: 20%;
+    }
+
+    .sec-5-event>.content>ul>li:hover>a>.img-box-2 {
+      transform: rotate(-12deg);
+      bottom: -15%;
+      right: 17%;
+    }
+
+    .sec-5-event>.content>ul>li>a>.img-box-3 {
+      width: clamp(200px, 15.63vw, 300px);
+      transform: rotate(-6deg);
+      bottom: -10%;
+      right: -20%;
+    }
+
+    .sec-5-event>.content>ul>li:hover>a>.img-box-3 {
+      transform: rotate(12deg);
+      bottom: -8%;
+      right: -18%;
+    }
+
+    .sec-5-event>.content>ul>li>a>.img-box-4 {
+      width: clamp(180px, 12.86vw, 247px);
+      transform: rotate(-4deg);
+      bottom: -10%;
+      right: -20%;
+    }
+
+    .sec-5-event>.content>ul>li:hover>a>.img-box-4 {
+      transform: rotate(12deg);
+      bottom: -8%;
+      right: -18%;
+    }
+
+    .sec-5-event>.content>ul>li>a>.img-box-5 {
+      width: clamp(180px, 12.86vw, 247px);
+      transform: rotate(5deg);
+      bottom: -20%;
+      right: 20%;
+    }
+
+    .sec-5-event>.content>ul>li:hover>a>.img-box-5 {
+      transform: rotate(-12deg);
+      bottom: -15%;
+      right: 17%;
+    }
+
+    @media (max-width:1200px) and (min-width:769px) {
+      .sec-5-event>.index {
+        margin-bottom: 60px;
+      }
+
+      .sec-5-event>.index>.logo-box {
+        width: 179px;
+      }
+
+      .sec-5-event>.index>.text {
+        font-size: 36px;
+      }
+
+      .sec-5-event>.content {
+        padding: 0 20px;
+        height: 331px;
+      }
+
+      .sec-5-event>.content>ul {
+        gap: 20px;
+      }
+
+      .sec-5-event>.content>ul>li>a>span {
+        font-size: 14px;
+      }
+
+      .sec-5-event>.content>ul>li>a>p {
+        font-size: 24px;
+        line-height: 34px;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-1 {
+        width: clamp(180px, 22.25vw, 267px);
+        bottom: -33%;
+        right: -24%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-1 {
+        transform: rotate(-12deg);
+        bottom: -30%;
+        right: -20%;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-2 {
+        width: clamp(110px, 15.58vw, 187px);
+        bottom: -24%;
+        right: 20%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-2 {
+        bottom: -20%;
+        right: 17%;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-3 {
+        width: clamp(110px, 15.58vw, 187px);
+        bottom: -20%;
+        right: -20%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-3 {
+        bottom: -16%;
+        right: -16%;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-4 {
+        width: clamp(100px, 14.5vw, 174px);
+        bottom: -32%;
+        right: -20%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-4 {
+        bottom: -28%;
+        right: -16%;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-5 {
+        width: clamp(100px, 14.5vw, 174px);
+        bottom: -34%;
+        right: 20%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-5 {
+        bottom: -30%;
+        right: 16%;
+      }
+    }
+
+    @media (max-width:768px) and (min-width:551px) {
+      .sec-5-event>.index {
+        margin-bottom: 40px;
+      }
+
+      .sec-5-event>.index>.logo-box {
+        width: 179px;
+      }
+
+      .sec-5-event>.index>.text {
+        font-size: 36px;
+      }
+
+      .sec-5-event>.content {
+        padding: 0 20px;
+        height: unset;
+      }
+
+      .sec-5-event>.content>ul {
+        gap: 20px;
+        flex-direction: column;
+      }
+
+      .sec-5-event>.content>ul>li {
+        height: 300px;
+        flex: unset;
+        padding: 20px;
+      }
+
+      .sec-5-event>.content>ul>li>a>span {
+        font-size: 16px;
+      }
+
+      .sec-5-event>.content>ul>li>a>p {
+        font-size: 28px;
+        line-height: 34px;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-1 {
+        width: clamp(280px, 41.67vw, 320px);
+        transform: rotate(-7deg);
+        bottom: -24%;
+        right: -10%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-1 {
+        transform: rotate(-12deg);
+        bottom: -24%;
+        right: -5%;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-2 {
+        width: clamp(200px, 32.81vw, 252px);
+        bottom: -24%;
+        right: 10%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-2 {
+        bottom: -20%;
+        right: 17%;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-3 {
+        width: clamp(200px, 32.81vw, 252px);
+        bottom: -15%;
+        right: -10%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-3 {
+        bottom: -16%;
+        right: -16%;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-4 {
+        width: clamp(180px, 28.65vw, 220px);
+        bottom: -32%;
+        right: -15%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-4 {
+        bottom: -28%;
+        right: -16%;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-5 {
+        width: clamp(175px, 26.69vw, 205px);
+        bottom: -34%;
+        right: 15%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-5 {
+        bottom: -30%;
+        right: 16%;
+      }
+    }
+
+    @media (max-width:550px) {
+      .sec-5-event{
+        min-width: 350px;
+      }
+      .sec-5-event>.index {
+        margin-bottom: 40px;
+      }
+
+      .sec-5-event>.index>.logo-box {
+        width: 146px;
+      }
+
+      .sec-5-event>.index>.text {
+        font-size: 30px;
+      }
+
+      .sec-5-event>.content {
+        padding: 0 20px;
+        height: unset;
+      }
+
+      .sec-5-event>.content>ul {
+        gap: 20px;
+        flex-direction: column;
+      }
+
+      .sec-5-event>.content>ul>li {
+        height: 188px;
+        flex: unset;
+        padding: 20px;
+      }
+
+      .sec-5-event>.content>ul>li>a>span {
+        font-size: 14px;
+      }
+
+      .sec-5-event>.content>ul>li>a>p {
+        font-size: 18px;
+        line-height: 34px;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-1 {
+        width: clamp(160px, 40.18vw, 221px);
+        transform: rotate(-7deg);
+        bottom: -24%;
+        right: -16%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-1 {
+        transform: rotate(-12deg);
+        bottom: -24%;
+        right: -12%;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-2 {
+        width: clamp(90px, 26.64vw, 130px);
+        bottom: -24%;
+        right: 10%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-2 {
+        bottom: -20%;
+        right: 17%;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-3 {
+        width: clamp(90px, 26.64vw, 130px);
+        bottom: -15%;
+        right: -10%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-3 {
+        bottom: -16%;
+        right: -16%;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-4 {
+        width: clamp(80px, 21.19vw, 120px);
+        bottom: -32%;
+        right: -5%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-4 {
+        bottom: -28%;
+        right: -12%;
+      }
+
+      .sec-5-event>.content>ul>li>a>.img-box-5 {
+        width: clamp(75px, 20vw, 140px);
+        bottom: -34%;
+        right: 10%;
+      }
+
+      .sec-5-event>.content>ul>li:hover>a>.img-box-5 {
+        bottom: -30%;
+        right: 16%;
+      }
+    }
+  </style>
+
+</body>
+
+</html>
