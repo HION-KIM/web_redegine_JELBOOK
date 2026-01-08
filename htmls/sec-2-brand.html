@@ -70,14 +70,16 @@
         }
 
         .sec-2-brand>.container>.content>div {
-            font-size:clamp(18px, 2.5vw, 48px);/* font-size: 48px; */
+            font-size: clamp(18px, 2.5vw, 48px);
+            /* font-size: 48px; */
             font-weight: var(--fw-m);
             color: #fff;
             text-align: center;
         }
 
         .sec-2-brand>.container>.content>div:nth-child(2) {
-            font-size:clamp(24px, 2.81vw, 54px);/* font-size: 54px; */
+            font-size: clamp(24px, 2.81vw, 54px);
+            /* font-size: 54px; */
             font-weight: var(--fw-eb);
             margin: 8px 0;
         }
@@ -114,7 +116,7 @@
 
         .sec-2-brand>.container>.object-1 {
             /* width: 610px; */
-            width:clamp(209px, 31.77vw,610px);
+            width: clamp(209px, 31.77vw, 610px);
             transform: rotate(7.23deg);
             left: 2%;
             /* top: 25%; */
@@ -125,7 +127,7 @@
 
         .sec-2-brand>.container>.object-2 {
             /* width: 387px; */
-            width:clamp(132px, 20.16vw,387px);
+            width: clamp(132px, 20.16vw, 387px);
             right: 2%;
             top: 120%;
             z-index: -1;
@@ -133,14 +135,15 @@
 
         .sec-2-brand>.container>.object-3 {
             width: 283px;
-            width:clamp(97px, 14.74vw,283x);
+            width: clamp(97px, 14.74vw, 283x);
             transform: rotate(-8.17deg);
             right: 4%;
             top: 120%;
             z-index: -1;
         }
-        .sec-2-brand>.container>.object>img{
-            width:100%;
+
+        .sec-2-brand>.container>.object>img {
+            width: 100%;
             object-fit: cover;
         }
     </style>
@@ -148,62 +151,70 @@
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
-        var $background = $('.sec-2-brand>.container>.background>img')
-        var $object1 = $('.sec-2-brand>.container>.object-1')
-        var $object2 = $('.sec-2-brand>.container>.object-2')
-        var $object3 = $('.sec-2-brand>.container>.object-3')
-
-        gsap.to($background, {
-            yPercent: -30,
-            scrollTrigger: {
-                trigger: ".sec-2-brand",
-                pin: true,
-                start: "top top",
-                end: "+=11000",
-                scrub: true,
-            }
-        });
-
-        gsap.set($object1, { scale: 1.7 });
-        gsap.set($object2, { scale: 1.7 });
-        gsap.set($object3, { scale: 1.7 });
-
-        gsap.to($object1, {
-            y: -1700,
-            scale: 1,
-            scrollTrigger: {
-                trigger: $object1,
-                start: "top+=3000 top",
-                end: "+=5000",
-                scrub: true,
-                // markers: true,
-            }
-        });
 
 
-        gsap.to($object2, {
-            y: -1700,
-            scale: 1,
-            scrollTrigger: {
-                trigger: $object2,
-                start: "top top",
-                end: "+=5000",
-                scrub: true,
-                // markers: true,
-            }
-        });
-        gsap.to($object3, {
-            y: -1700,
-            scale: 1,
-            scrollTrigger: {
-                trigger: $object3,
-                start: "top+=6000 top",
-                end: "+=5000",
-                scrub: true,
-                markers: true,
-            }
-        });
 
+        function ScrollTriggerSection2ani() {
+            $(window).on('load', function () {
+                var $background = $('.sec-2-brand>.container>.background>img')
+                var $object1 = $('.sec-2-brand>.container>.object-1')
+                var $object2 = $('.sec-2-brand>.container>.object-2')
+                var $object3 = $('.sec-2-brand>.container>.object-3')
+
+                gsap.to($background, {
+                    yPercent: -30,
+                    scrollTrigger: {
+                        trigger: ".sec-2-brand",
+                        pin: true,
+                        start: "top top",
+                        end: "+=11000",
+                        scrub: true,
+                    }
+                });
+
+                gsap.set($object1, { scale: 2 });
+                gsap.set($object2, { scale: 2 });
+                gsap.set($object3, { scale: 2 });
+
+                gsap.to($object1, {
+                    y: -1700,
+                    scale: 1,
+                    scrollTrigger: {
+                        trigger: $object1,
+                        start: "top+=3000 top",
+                        end: "+=5000",
+                        scrub: true,
+                        // markers: true,
+                    }
+                });
+
+
+                gsap.to($object2, {
+                    y: -1700,
+                    scale: 1,
+                    scrollTrigger: {
+                        trigger: $object2,
+                        start: "top top",
+                        end: "+=5000",
+                        scrub: true,
+                        // markers: true,
+                    }
+                });
+                gsap.to($object3, {
+                    y: -1700,
+                    scale: 1,
+                    scrollTrigger: {
+                        trigger: $object3,
+                        start: "top+=6000 top",
+                        end: "+=5000",
+                        scrub: true,
+                        markers: true,
+                    }
+                });
+            });
+        }
+
+        ScrollTriggerSection2ani();
     </script>
 </body>
 

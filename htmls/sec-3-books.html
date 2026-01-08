@@ -610,9 +610,10 @@
         }
 
         @media (max-width:550px) {
-            .sec-3-books{
+            .sec-3-books {
                 min-width: 350px;
             }
+
             .sec-3-books>.text-box {
                 margin: 80px 0;
             }
@@ -744,10 +745,10 @@
                     type: "progressbar",
                 },
                 breakpoints: {
-                    1200: {
+                    1201: {
                         spaceBetween: 40,
                     },
-                    550: {
+                    551: {
                         spaceBetween: 20,
                     },
                     0: {
@@ -770,25 +771,34 @@
 
             });
         }
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.sec-3-books',
-                start: 'top top+=500',
-                end: '+=1000',
-                scrub: true,
-                markers: true,
-            }
-        });
 
-        tl.fromTo(
-            '.sec-3-books > .content',
-            { clipPath: 'inset(0 50% 0 50% round 40px 40px 0 0)' },
-            { clipPath: 'inset(0 0% 0 0% round 40px 40px 0 0)' }
-        );
+
+        function scrollTriggerClipPath() {
+            $(window).on('load', function () {
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.sec-3-books',
+                        start: 'top top+=500',
+                        end: '+=1000',
+                        scrub: true,
+                        markers: true,
+                    }
+                });
+
+                tl.fromTo(
+                    '.sec-3-books > .content',
+                    { clipPath: 'inset(0 50% 0 50% round 40px 40px 0 0)' },
+                    { clipPath: 'inset(0 0% 0 0% round 40px 40px 0 0)' }
+                );
+            });
+
+        }
+
 
 
         sec3SwiperInit();
         sec3SwipertabInit();
+        scrollTriggerClipPath();
 
 
     </script>

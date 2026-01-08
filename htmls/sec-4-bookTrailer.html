@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>재능스스로북 트레일러</title>
+
+  <!-- Script GSAP's JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <!-- Script Scrolltrigger's JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Script Jquery's JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Script Swiper' JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- Link Swiper' CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <!-- Link inner's CSS -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <main>
+    <section class="sec-4-bookTrailer">
+      <div class="background">
+        <div></div>
+        <div class="active"></div>
+        <div></div>
+        <div class="filter">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="index">
+          Book Trailer
+        </div>
+        <div class="swiper-box">
+          <div class="swiper swiper-sec4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide-1">
+                <div class="iframe-cover"></div>
+                <iframe
+                  src="https://www.youtube.com/embed/U2wMr_S5SeU?autoplay=0&mute=1&loop=1&playlist=U2wMr_S5SeU&controls=0"
+                  allow="autoplay"></iframe>
+              </div>
+              <div class="swiper-slide slide-2">
+                <div class="iframe-cover"></div>
+                <iframe
+                  src="https://www.youtube.com/embed/4G9IO2mHRNI?autoplay=0&mute=1&loop=1&playlist=4G9IO2mHRNI&controls=0"
+                  allow="autoplay"></iframe>
+              </div>
+              <div class="swiper-slide slide-3">
+                <div class="iframe-cover"></div>
+                <iframe
+                  src="https://www.youtube.com/embed/CzReGnugti0?autoplay=0&mute=1&loop=1&playlist=CzReGnugti0&controls=0"
+                  allow="autoplay"></iframe>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <style>
+    .sec-4-bookTrailer {
+      width: 100%;
+      padding: 240px 0;
+      position: relative;
+    }
+
+    .sec-4-bookTrailer>.background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
+    }
+
+    .sec-4-bookTrailer>.background>div:nth-child(1) {
+      width: 100%;
+      height: 100%;
+      background-image: url(../imgs/img-sec4-background-3.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.4;
+
+      display: none;
+    }
+
+    .sec-4-bookTrailer>.background>div:nth-child(2) {
+      width: 100%;
+      height: 100%;
+      background-image: url(../imgs/img-sec4-background-1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.4;
+
+      display: none;
+    }
+
+    .sec-4-bookTrailer>.background>div:nth-child(3) {
+      width: 100%;
+      height: 100%;
+      background-image: url(../imgs/img-sec4-background-2.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.4;
+
+      display: none;
+    }
+
+    .sec-4-bookTrailer>.background>div.active {
+      display: block;
+    }
+
+
+
+    .sec-4-bookTrailer>.background>.filter {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sec-4-bookTrailer>.background>.filter>div {
+      width: 100%;
+      height: 300px;
+    }
+
+    .sec-4-bookTrailer>.background>.filter>div:nth-child(1) {
+      background-image: url(../imgs/img-background-filter-top.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .sec-4-bookTrailer>.background>.filter>div:nth-child(2) {
+      background-image: url(../imgs/img-background-filter-bottom.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .sec-4-bookTrailer>.content>.index {
+      font-size: 42px;
+      font-weight: var(--fw-b);
+      margin-bottom: 80px;
+      text-align: center;
+    }
+
+    .sec-4-bookTrailer>.content>.swiper-box {
+      width: 100%;
+      height: 582px;
+      overflow: hidden;
+    }
+
+    .sec-4-bookTrailer>.content>.swiper-box>.swiper {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+
+      height: 100%;
+      width: auto !important;
+      aspect-ratio: 16 / 9;
+    }
+
+
+    .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide>iframe {
+      height: 100%;
+      width: 100%;
+    }
+
+    .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide>.iframe-cover {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width:1200px) and (min-width:769px) {
+      .sec-4-bookTrailer {
+        padding: 160px 0;
+      }
+
+      .sec-4-bookTrailer>.content>.index {
+        font-size: 36px;
+      }
+
+      .sec-4-bookTrailer>.content>.swiper-box {
+        height: 407px;
+      }
+
+      .sec-4-bookTrailer>.background>.filter>div {
+        height: 180px;
+      }
+    }
+
+    @media (max-width:768px) and (min-width:551px) {
+      .sec-4-bookTrailer {
+        padding: 140px 0;
+      }
+
+      .sec-4-bookTrailer>.content>.index {
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+
+      .sec-4-bookTrailer>.content>.swiper-box {
+        height: 286px;
+      }
+
+      .sec-4-bookTrailer>.background>.filter>div {
+        height: 140px;
+      }
+    }
+
+    @media (max-width:550px) {
+      .sec-4-bookTrailer {
+        padding: 76px 0;
+        min-width: 350px;
+      }
+
+      .sec-4-bookTrailer>.content>.index {
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+
+      .sec-4-bookTrailer>.content>.swiper-box {
+        height: 200px;
+      }
+
+      .sec-4-bookTrailer>.background>.filter>div {
+        height: 80px;
+      }
+    }
+  </style>
+
+
+  <script>
+    var swipersec4 = new Swiper(".swiper-sec4", {
+      effect: 'coverflow',
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      loop: true,
+      speed: 600,
+
+      touchStartPreventDefault: false,
+      simulateTouch: true,
+
+      coverflowEffect: {
+        rotate: 0,
+        stretch: -160,
+        depth: 250,
+        modifier: 1,
+        slideShadows: false,
+      },
+
+      on: {
+        init() { setTimeout(() => { this.update(); this.slideToLoop(1, 0); }, 0); },
+        realIndexChange() {
+          const index = this.realIndex;
+
+          $('.sec-4-bookTrailer>.background>div').eq(index).addClass('active').siblings().removeClass('active');
+        },
+      },
+
+      breakpoints: {
+        1201: {
+          coverflowEffect: {
+            stretch: -160,
+          },
+        },
+        769: {
+          coverflowEffect: {
+            stretch: -110,
+          },
+        },
+        551: {
+          coverflowEffect: {
+            stretch: -70,
+          },
+        },
+        0: {
+          coverflowEffect: {
+            stretch: -50,
+          },
+        },
+      }
+    });
+
+  </script>
+</body>
+
+</html>
