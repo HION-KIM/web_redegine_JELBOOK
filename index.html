@@ -5,12 +5,204 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>재능 스스로북 리디자인</title>
+  <!-- Script GSAP's JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <!-- Script Scrolltrigger's JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Script Jquery's JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Script Swiper' JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- Link Swiper' CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <!-- Link inner's CSS -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- Script inner's JS -->
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
   <div>
-    <header></header>
+    <header>
+      <div class="header-inner">
+        <div class="container">
+          <div class="logo-box">
+            <img src="../imgs/logo_header-w.svg" alt="로고 헤더 화이트">
+            <img src="../imgs/logo_header-b.svg" alt="로고 헤더 블랙">
+          </div>
+          <nav class="menu-box">
+            <ul>
+              <li><a href="#"><span>회사소개</span></a>
+                <div>
+                  <ul>
+                    <li><a href="#"><span>출판사 소개</span></a></li>
+                    <li><a href="#"><span>구입처 안내</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#"><span>도서소개</span></a>
+                <div>
+                  <ul>
+                    <li><a href="#"><span>그림책</span></a></li>
+                    <li><a href="#"><span>어린이 교양</span></a></li>
+                    <li><a href="#"><span>수상 추천 도서</span></a></li>
+                    <li><a href="#"><span>md 추천 도서</span></a></li>
+                    <li><a href="#"><span>북트레일러</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#"><span>베스트도서</span></a></li>
+              <li><a href="#"><span>신상도서</span></a></li>
+              <li><a href="#"><span>지원센터</span></a>
+                <div>
+                  <ul>
+                    <li><a href="#"><span>원고투고</span></a></li>
+                    <li><a href="#"><span>웹진</span></a></li>
+                    <li><a href="#"><span>도서목록 받기</span></a></li>
+                    <li><a href="#"><span>이벤트 소식</span></a></li>
+                    <li><a href="#"><span>온라인 소식 받기</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#"><span>공지사항</span></a></li>
+            </ul>
+          </nav>
+          <div class="btn-box">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="header-side-menu-box">
+        <div>
+          <div>
+            <div class="leng">
+              <button>KOR <div><img src="../imgs/icon_arr_down_14.svg" alt="아이콘 아래"></div></button>
+              <div>
+                <div><a href="#"><span>KOR</span></a></div>
+                <div><a href="#"><span>En</span></a></div>
+              </div>
+            </div>
+            <div class="login"><a href="#"><span>로그인</span></a></div>
+          </div>
+
+          <nav class="menu-box">
+            <ul>
+              <li>
+                <a href="#"><span>회사소개</span></a>
+                <ul>
+                  <li><a href="#"><span>출판사 소개</span></a></li>
+                  <li><a href="#"><span>구입처 안내</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>도서소개</span></a>
+                <ul>
+                  <li><a href="#"><span>그림책</span></a></li>
+                  <li><a href="#"><span>어린이 교양</span></a></li>
+                  <li><a href="#"><span>수상 추천 도서</span></a></li>
+                  <li><a href="#"><span>md 추천 도서</span></a></li>
+                  <li><a href="#"><span>북트레일러</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>베스트도서</span></a></li>
+              <li><a href="#"><span>신상도서</span></a></li>
+              <li><a href="#"><span>지원센터</span></a>
+                <ul>
+                  <li><a href="#"><span>원고투고</span></a></li>
+                  <li><a href="#"><span>웹진</span></a></li>
+                  <li><a href="#"><span>도서목록 받기</span></a></li>
+                  <li><a href="#"><span>이벤트 소식</span></a></li>
+                  <li><a href="#"><span>온라인 소식 받기</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>공지사항</span></a></li>
+            </ul>
+          </nav>
+
+          <div class="sns-box">
+            <div>
+              <div><a href="#"><img src="../imgs/icon_sns_instargram.svg" alt="SNS 아이콘"></a></div>
+              <div><a href="#"><img src="../imgs/icon_sns_facebook.svg" alt="SNS 아이콘"></a></div>
+              <div><a href="#"><img src="../imgs/icon_sns_naver.svg" alt="SNS 아이콘"></a></div>
+              <div><a href="#"><img src="../imgs/icon_sns_mom.svg" alt="SNS 아이콘"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu-box">
+        <div class="closed-btn"></div>
+
+        <div class="contents">
+          <div class="logo-box">
+            <img src="../imgs/logo_header-w.svg" alt="로고박스 로고 화이트">
+          </div>
+
+          <div>
+            <div class="leng">
+              <div><span>Kor</span><span>En</span></div>
+              <div><img src="../imgs/icon_arr_down_14.svg" alt="아이콘 아래"><img src="../imgs/icon_arr_top_14.svg"
+                  alt="아이콘 위"></div>
+            </div>
+            <div></div> <!-- 중간 막대 -->
+            <div class="login"><a href="#"><span>로그인</span></a></div>
+          </div>
+
+          <nav class="menu-box">
+            <ul>
+              <li>
+                <a href="#"><span>회사소개</span></a>
+                <ul>
+                  <li><a href="#"><span>출판사 소개</span></a></li>
+                  <li><a href="#"><span>구입처 안내</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>도서소개</span></a>
+                <ul>
+                  <li><a href="#"><span>그림책</span></a></li>
+                  <li><a href="#"><span>어린이 교양</span></a></li>
+                  <li><a href="#"><span>수상 추천 도서</span></a></li>
+                  <li><a href="#"><span>md 추천 도서</span></a></li>
+                  <li><a href="#"><span>북트레일러</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>베스트도서</span></a></li>
+              <li><a href="#"><span>신상도서</span></a></li>
+              <li><a href="#"><span>지원센터</span></a>
+                <ul>
+                  <li><a href="#"><span>원고투고</span></a></li>
+                  <li><a href="#"><span>웹진</span></a></li>
+                  <li><a href="#"><span>도서목록 받기</span></a></li>
+                  <li><a href="#"><span>이벤트 소식</span></a></li>
+                  <li><a href="#"><span>온라인 소식 받기</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>공지사항</span></a></li>
+            </ul>
+          </nav>
+
+          <div class="sns-box">
+            <div>
+              <div><a href="#"><img src="../imgs/icon_sns_instargram.svg" alt="SNS 아이콘"></a></div>
+              <div><a href="#"><img src="../imgs/icon_sns_facebook.svg" alt="SNS 아이콘"></a></div>
+              <div><a href="#"><img src="../imgs/icon_sns_naver.svg" alt="SNS 아이콘"></a></div>
+              <div><a href="#"><img src="../imgs/icon_sns_mom.svg" alt="SNS 아이콘"></a></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="background-img">
+          <img src="../imgs/img_background_btn_box.jpg" alt="배경 이미지">
+        </div>
+      </div>
+    </header>
 
     <main></main>
 
