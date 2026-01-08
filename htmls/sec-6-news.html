@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>재능스스로북 뉴스</title>
+  <!-- Script GSAP's JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <!-- Script Scrolltrigger's JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Script Jquery's JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Script Swiper' JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- Link Swiper' CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <!-- Link inner's CSS -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <main>
+    <section class="sec-6-news">
+      <div class="container">
+        <div class="index">
+          <div class="logo-box"><img src="../imgs/logo-000032.png" alt="로고 남색"></div>
+          <div class="text">뉴스</div>
+        </div>
+        <div>재능스스로북의 다양한 소식을 만나보세요.</div>
+        <div class="content">
+          <ul>
+            <li><a href="#">
+                <img class="swipeimage" src="../imgs/img-sec6-1.jpg" alt="이미지스와이프">
+                <div><span>공지</span></div>
+                <div><span>2024 행복한 아침도서 추천도서!</span><span>2024-02-18</span></div>
+                <div><span>2024-02-18</span></div>
+              </a></li>
+            <li><a href="#">
+                <img class="swipeimage" src="../imgs/img-sec6-2.jpg" alt="이미지스와이프">
+                <div><span>수상</span></div>
+                <div><span>재능교육 그림책 <꼬리별> '2023 카네기 상' 수상!</span><span>2023-07-28</span></div>
+                <div><span>2023-07-28</span></div>
+              </a></li>
+            <li><a href="#">
+                <img class="swipeimage" src="../imgs/img-sec6-3.jpg" alt="이미지스와이프">
+                <div><span>소식</span></div>
+                <div><span>2022년 우수환경도서 재능교육 그림책 2종 선정</span><span>2022-06-10</span></div>
+                <div><span>2022-06-10</span></div>
+              </a></li>
+            <li><a href="#">
+                <img class="swipeimage" src="../imgs/img-sec6-4.jpg" alt="이미지스와이프">
+                <div><span>소식</span></div>
+                <div><span>재능교육 그림책, 2020 북스타트 2종 선정!</span><span>2019-12-31</span></div>
+                <div><span>2019-12-31</span></div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <style>
+    .sec-6-news {
+      padding: 120px 0 200px;
+    }
+
+    .sec-6-news>.container {
+      max-width: 1440px;
+      padding: 0 20px;
+      margin: 0 auto;
+    }
+
+    .sec-6-news>.container>.index {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .sec-6-news>.container>.index>.logo-box {
+      width: 200px;
+    }
+
+    .sec-6-news>.container>.index>.logo-box>img {
+      width: 100%;
+    }
+
+    .sec-6-news>.container>.index>.text {
+      font-size: 42px;
+      font-weight: var(--fw-b);
+    }
+
+    .sec-6-news>.container>div:nth-child(2) {
+      font-size: 24px;
+      font-weight: var(--fw-m);
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .sec-6-news>.container>.content>ul {
+      border-top: 2px solid #4D4D4D;
+      border-bottom: 2px solid #4D4D4D;
+    }
+
+    .sec-6-news>.container>.content>ul>li {
+      height: 80px;
+      font-weight: var(--fw-m);
+      font-size: 24px;
+    }
+
+    .sec-6-news>.container>.content>ul>li>a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .sec-6-news>.container>.content>ul>li:not(:last-child) {
+      border-bottom: 1px solid #4D4D4D;
+    }
+
+    .sec-6-news>.container>.content>ul>li>a>div {
+      padding: 0 20px;
+    }
+
+    .sec-6-news>.container>.content>ul>li>a>div:nth-child(2) {
+      flex-shrink: 0;
+    }
+
+    .sec-6-news>.container>.content>ul>li>a>div:nth-child(3) {
+      flex-grow: 1;
+
+    }
+
+    .sec-6-news>.container>.content>ul>li>a>div:nth-child(3)>span:nth-child(2){
+      display:none;
+      margin-top:8px;
+      font-size: 12px;
+      font-weight: var(--fw-m);
+    }
+
+    .sec-6-news>.container>.content>ul>li>a>div:nth-child(4) {
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+
+
+    .sec-6-news>.container>.content>ul>li>a>.swipeimage {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 240px;
+      object-fit: cover;
+      transform: translateX(-50%) translateY(-50%) rotate(12deg);
+      z-index: 9;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    @media (max-width:1200px) and (min-width:769px) {
+      .sec-6-news {
+        padding: 100px 20px 140px;
+      }
+
+      .sec-6-news>.container {
+        max-width: unset;
+        padding: 0 0;
+      }
+
+      .sec-6-news>.container>.index>.logo-box {
+        width: 179px;
+      }
+
+      .sec-6-news>.container>.index>.text {
+        font-size: 36px;
+      }
+
+      .sec-6-news>.container>div:nth-child(2) {
+        font-size: 20px;
+        margin-bottom: 60px;
+      }
+
+      .sec-6-news>.container>.content>ul>li {
+        font-size: 20px;
+      }
+
+      .sec-6-news>.container>.content>ul>li>a>div:nth-child(4) {
+        font-size: 16px;
+      }
+
+      .sec-6-news>.container>.content>ul>li>a>.swipeimage {
+        width: 200px;
+      }
+    }
+
+    @media (max-width:768px) and (min-width:551px) {
+      .sec-6-news {
+        padding: 100px 20px 140px;
+      }
+
+      .sec-6-news>.container {
+        max-width: unset;
+        padding: 0 0;
+      }
+
+      .sec-6-news>.container>.index>.logo-box {
+        width: 179px;
+      }
+
+      .sec-6-news>.container>.index>.text {
+        font-size: 36px;
+      }
+
+      .sec-6-news>.container>div:nth-child(2) {
+        font-size: 20px;
+        margin-bottom: 60px;
+      }
+
+      .sec-6-news>.container>.content>ul>li {
+        font-size: 20px;
+      }
+
+      .sec-6-news>.container>.content>ul>li>a>div:nth-child(4) {
+        font-size: 16px;
+      }
+
+      .sec-6-news>.container>.content>ul>li>a>.swipeimage {
+        width: 200px;
+      }
+    }
+
+    @media (max-width:550px) {
+      .sec-6-news {
+        padding: 60px 20px 100px;
+        min-width:350px;
+      }
+
+      .sec-6-news>.container {
+        max-width: unset;
+        padding: 0 0;
+      }
+
+      .sec-6-news>.container>.index>.logo-box {
+        width: 146px;
+      }
+
+      .sec-6-news>.container>.index>.text {
+        font-size: 30px;
+      }
+
+      .sec-6-news>.container>div:nth-child(2) {
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+
+      .sec-6-news>.container>.content>ul>li {
+        font-size: 16px;
+      }
+
+      .sec-6-news>.container>.content>ul>li>a>div:nth-child(4) {
+        font-size: 16px;
+        display:none;
+      }
+      .sec-6-news>.container>.content>ul>li>a>div:nth-child(3)>span:nth-child(2){
+        display:block;
+      }
+
+      .sec-6-news>.container>.content>ul>li>a>.swipeimage {
+        width: 120px;
+      }
+      
+    }
+  </style>
+
+  <script>
+
+    function sec6SwipeImageInit() {
+      var $swipeimageList = $('.sec-6-news>.container>.content>ul>li');
+      var $swipeimage = $('.sec-6-news>.container>.content>ul>li>a>.swipeimage');
+      gsap.set($swipeimage, { yPercent: -50, xPercent: -50 });
+
+      let firstEnter;
+
+      gsap.utils.toArray($swipeimageList).forEach((el) => {
+        const image = el.querySelector("img.swipeimage"),
+          setX = gsap.quickTo(image, "x", { duration: 0.4, ease: "power3" }),
+          setY = gsap.quickTo(image, "y", { duration: 0.4, ease: "power3" }),
+          align = (e) => {
+            if (firstEnter) {
+              setX(e.clientX, e.clientX); //https://gsap.com/docs/v3/GSAP/gsap.quickTo()/#optionally-define-a-start-value
+              setY(e.clientY, e.clientY);
+              firstEnter = false;
+            } else {
+              setX(e.clientX);
+              setY(e.clientY);
+            }
+          },
+          startFollow = () => document.addEventListener("mousemove", align),
+          stopFollow = () => document.removeEventListener("mousemove", align),
+          fade = gsap.to(image, {
+            autoAlpha: 1,
+            ease: "none",
+            paused: true,
+            duration: 0.1,
+            onReverseComplete: stopFollow
+          });
+
+        el.addEventListener("mouseenter", (e) => {
+          firstEnter = true;
+          fade.play();
+          startFollow();
+          align(e);
+        });
+
+        el.addEventListener("mouseleave", () => fade.reverse());
+      });
+    }
+
+    sec6SwipeImageInit();
+  </script>
+
+</body>
+
+</html>
