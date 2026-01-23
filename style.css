@@ -571,7 +571,7 @@ header .header-side-menu-box .menu-box>ul>li>a {
 }
 
 header .header-side-menu-box .menu-box>ul>li>a:not(:only-child)::after {
-    content: url(../imgs/icon_arr_down_14_b.svg);
+    content: url(imgs/icon_arr_down_14_b.svg);
     display: block;
     width: 15px;
     aspect-ratio: 1 / 1;
@@ -803,7 +803,7 @@ header .header-side-menu-box .sns-box>div>div img {
 
 /* ---------- 섹션 1 커스텀 시작 ---------- */
 .sec-1-banner {
-    background-image: url(../imgs/img-banner-object-background.jpg);
+    background-image: url(imgs/img-banner-object-background.jpg);
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -829,7 +829,7 @@ header .header-side-menu-box .sns-box>div>div img {
 }
 
 .sec-1-banner .text-box-1>div:nth-child(1) {
-    background-image: url(../imgs/img-banner-object-textbackgrouind.svg);
+    background-image: url(imgs/img-banner-object-textbackgrouind.svg);
     object-fit: cover;
     background-repeat: no-repeat;
 
@@ -899,7 +899,7 @@ header .header-side-menu-box .sns-box>div>div img {
     width: 24px;
     aspect-ratio: 1 / 1;
 
-    background-image: url(../imgs/icon-arr-right.svg);
+    background-image: url(imgs/icon-arr-right.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -939,7 +939,7 @@ header .header-side-menu-box .sns-box>div>div img {
 }
 
 .sec-1-banner .text-box-2>div:nth-child(1) {
-    background-image: url(../imgs/img-banner-object-textbackgrouind.svg);
+    background-image: url(imgs/img-banner-object-textbackgrouind.svg);
     object-fit: cover;
     background-repeat: no-repeat;
 
@@ -1021,7 +1021,7 @@ header .header-side-menu-box .sns-box>div>div img {
     width: 16px;
     height: 16px;
 
-    background-image: url(../imgs/icon-arr-right.svg);
+    background-image: url(imgs/icon-arr-right.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -1249,7 +1249,7 @@ header .header-side-menu-box .sns-box>div>div img {
 .sec-2-brand>.container>.content>div:nth-child(2)::after {
     content: "";
     display: block;
-    background-image: url(../imgs/background-ellipese.png);
+    background-image: url(imgs/background-ellipese.png);
 
     background-repeat: no-repeat;
     background-size: contain;
@@ -1907,7 +1907,7 @@ header .header-side-menu-box .sns-box>div>div img {
 .sec-4-bookTrailer>.background>div:nth-child(1) {
     width: 100%;
     height: 100%;
-    background-image: url(../imgs/img-sec4-background-3.jpg);
+    background-image: url(imgs/img-sec4-background-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1919,7 +1919,7 @@ header .header-side-menu-box .sns-box>div>div img {
 .sec-4-bookTrailer>.background>div:nth-child(2) {
     width: 100%;
     height: 100%;
-    background-image: url(../imgs/img-sec4-background-1.jpg);
+    background-image: url(imgs/img-sec4-background-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1931,7 +1931,7 @@ header .header-side-menu-box .sns-box>div>div img {
 .sec-4-bookTrailer>.background>div:nth-child(3) {
     width: 100%;
     height: 100%;
-    background-image: url(../imgs/img-sec4-background-2.jpg);
+    background-image: url(imgs/img-sec4-background-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1963,14 +1963,14 @@ header .header-side-menu-box .sns-box>div>div img {
 }
 
 .sec-4-bookTrailer>.background>.filter>div:nth-child(1) {
-    background-image: url(../imgs/img-background-filter-top.png);
+    background-image: url(imgs/img-background-filter-top.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sec-4-bookTrailer>.background>.filter>div:nth-child(2) {
-    background-image: url(../imgs/img-background-filter-bottom.png);
+    background-image: url(imgs/img-background-filter-bottom.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
