@@ -156,7 +156,6 @@ function sec4SwiperInit() {
     effect: 'coverflow',
     slidesPerView: 'auto',
     centeredSlides: true,
-    loop: true,
     speed: 600,
 
     touchStartPreventDefault: false,
@@ -177,7 +176,12 @@ function sec4SwiperInit() {
 
         $('.sec-4-bookTrailer>.background>div').eq(index).addClass('active').siblings().removeClass('active');
       },
+      slideChangeTransitionStart: function () {
+        $('.swiper-slide').not('.swiper-slide-active').find('.iframe-cover').show();
+      }
     },
+
+
 
     breakpoints: {
       1201: {
@@ -201,6 +205,11 @@ function sec4SwiperInit() {
         },
       },
     }
+  });
+
+
+  $('.sec-4-bookTrailer .iframe-cover').click(function () {
+    $(this).css('display', 'none');
   });
 }
 

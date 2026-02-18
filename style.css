@@ -1907,11 +1907,11 @@ header .header-side-menu-box .sns-box>div>div img {
 .sec-4-bookTrailer>.background>div:nth-child(1) {
     width: 100%;
     height: 100%;
-    background-image: url(imgs/img-sec4-background-3.jpg);
+    background-image: url(/imgs/img-sec4-background-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.4;
+    opacity: 0.2;
 
     display: none;
 }
@@ -1919,11 +1919,11 @@ header .header-side-menu-box .sns-box>div>div img {
 .sec-4-bookTrailer>.background>div:nth-child(2) {
     width: 100%;
     height: 100%;
-    background-image: url(imgs/img-sec4-background-1.jpg);
+    background-image: url(/imgs/img-sec4-background-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.4;
+    opacity: 0.2;
 
     display: none;
 }
@@ -1931,11 +1931,11 @@ header .header-side-menu-box .sns-box>div>div img {
 .sec-4-bookTrailer>.background>div:nth-child(3) {
     width: 100%;
     height: 100%;
-    background-image: url(imgs/img-sec4-background-2.jpg);
+    background-image: url(/imgs/img-sec4-background-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.4;
+    opacity: 0.2;
 
     display: none;
 }
@@ -1963,14 +1963,14 @@ header .header-side-menu-box .sns-box>div>div img {
 }
 
 .sec-4-bookTrailer>.background>.filter>div:nth-child(1) {
-    background-image: url(imgs/img-background-filter-top.png);
+    background-image: url(/imgs/img-background-filter-top.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sec-4-bookTrailer>.background>.filter>div:nth-child(2) {
-    background-image: url(imgs/img-background-filter-bottom.png);
+    background-image: url(/imgs/img-background-filter-bottom.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2011,17 +2011,67 @@ header .header-side-menu-box .sns-box>div>div img {
 .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide>iframe {
     height: 100%;
     width: 100%;
+    display: none;
+}
+
+.sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide-active>iframe {
+    display: block;
+}
+
+.sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide-active>iframe {
+    display: block;
 }
 
 .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide>.iframe-cover {
     position: absolute;
     inset: 0;
     z-index: 2;
+    background-image: url(/imgs/img-sec4-background-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: 100%;
+}
+
+.sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide>.iframe-cover::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100px;
+    aspect-ratio: 1.25 / 1;
+    border-radius: 25%;
+    background-color: red;
+    opacity: 0.7;
+
+}
+
+.sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide>.iframe-cover::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-40%, -50%);
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0px 20px 40px;
+    border-color: transparent transparent transparent #fff;
+    opacity: 0.7;
+    z-index: 11;
+}
+
+
+.sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide:nth-child(2)>.iframe-cover {
+    background-image: url(/imgs/img-sec4-background-1.jpg);
+}
+
+.sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide:nth-child(3)>.iframe-cover {
+    background-image: url(/imgs/img-sec4-background-2.jpg);
 }
 
 @media (max-width:1200px) and (min-width:769px) {
