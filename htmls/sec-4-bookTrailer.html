@@ -45,20 +45,23 @@
               <div class="swiper-slide slide-1">
                 <div class="iframe-cover"></div>
                 <iframe
-                  src="https://www.youtube.com/embed/U2wMr_S5SeU?autoplay=0&mute=1&loop=1&playlist=U2wMr_S5SeU&controls=0"
-                  allow="autoplay"></iframe>
+                  src="https://www.youtube.com/embed/U2wMr_S5SeU?autoplay=1&mute=1&loop=0&playlist=U2wMr_S5SeU&controls=1"
+                  allow="autoplay"
+                  class="player"></iframe>
               </div>
               <div class="swiper-slide slide-2">
                 <div class="iframe-cover"></div>
                 <iframe
-                  src="https://www.youtube.com/embed/4G9IO2mHRNI?autoplay=0&mute=1&loop=1&playlist=4G9IO2mHRNI&controls=0"
-                  allow="autoplay"></iframe>
+                  src="https://www.youtube.com/embed/4G9IO2mHRNI?autoplay=1&mute=1&loop=0&playlist=4G9IO2mHRNI&controls=1"
+                  allow="autoplay"
+                  class="player"></iframe>
               </div>
               <div class="swiper-slide slide-3">
                 <div class="iframe-cover"></div>
                 <iframe
-                  src="https://www.youtube.com/embed/CzReGnugti0?autoplay=0&mute=1&loop=1&playlist=CzReGnugti0&controls=0"
-                  allow="autoplay"></iframe>
+                  src="https://www.youtube.com/embed/CzReGnugti0?autoplay=1&mute=1&loop=0&playlist=CzReGnugti0&controls=1"
+                  allow="autoplay"
+                  class="player"></iframe>
               </div>
 
 
@@ -194,9 +197,14 @@
     .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide>iframe {
       height: 100%;
       width: 100%;
-      display:none;
+      display: none;
     }
-    .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide-active>iframe{
+
+    .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide-active>iframe {
+      display: block;
+    }
+
+    .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide-active>iframe {
       display: block;
     }
 
@@ -251,11 +259,6 @@
     .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide:nth-child(3)>.iframe-cover {
       background-image: url(../imgs/img-sec4-background-2.jpg);
     }
-
-    
-    /* .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide-active>.iframe-cover {
-      display: none;
-    } */
 
     @media (max-width:1200px) and (min-width:769px) {
       .sec-4-bookTrailer {
@@ -342,7 +345,7 @@
 
             $('.sec-4-bookTrailer>.background>div').eq(index).addClass('active').siblings().removeClass('active');
           },
-          slideChangeTransitionEnd: function(){
+          slideChangeTransitionStart: function () {
             $('.swiper-slide').not('.swiper-slide-active').find('.iframe-cover').show();
           }
         },
@@ -373,6 +376,10 @@
         }
       });
     }
+
+    $('.sec-4-bookTrailer .iframe-cover').click(function () {
+      $(this).css('display', 'none');
+    });
 
     sec4SwiperInit();
   </script>
