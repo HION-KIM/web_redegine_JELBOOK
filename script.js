@@ -157,6 +157,7 @@ function sec4SwiperInit() {
     slidesPerView: 'auto',
     centeredSlides: true,
     speed: 600,
+    preventClicks: true,
 
     touchStartPreventDefault: false,
     simulateTouch: true,
@@ -177,8 +178,17 @@ function sec4SwiperInit() {
         $('.sec-4-bookTrailer>.background>div').eq(index).addClass('active').siblings().removeClass('active');
       },
       slideChangeTransitionStart: function () {
+
+        var videoUrl1 = $('.myiframe-1').attr('src');
+        var videoUrl2 = $('.myiframe-2').attr('src');
+        var videoUrl3 = $('.myiframe-3').attr('src');
+
         $('.swiper-slide').not('.swiper-slide-active').find('.iframe-cover').show();
-      }
+        $('.swiper-slide').not('.swiper-slide-active').find('.myiframe').attr('src', '');
+        $('.swiper-slide').not('.swiper-slide-active').find('.myiframe-1').attr('src', videoUrl1);
+        $('.swiper-slide').not('.swiper-slide-active').find('.myiframe-2').attr('src', videoUrl2);
+        $('.swiper-slide').not('.swiper-slide-active').find('.myiframe-3').attr('src', videoUrl3);
+      },
     },
 
 

@@ -2011,16 +2011,12 @@ header .header-side-menu-box .sns-box>div>div img {
 .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide>iframe {
     height: 100%;
     width: 100%;
-    display: none;
+    /* display: none; */
 }
 
-.sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide-active>iframe {
+/* .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide-active>iframe {
     display: block;
-}
-
-.sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide-active>iframe {
-    display: block;
-}
+} */
 
 .sec-4-bookTrailer>.content>.swiper-box>.swiper>.swiper-wrapper>.swiper-slide>.iframe-cover {
     position: absolute;
